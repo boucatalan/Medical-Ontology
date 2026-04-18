@@ -1,0 +1,2672 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<link rel="stylesheet" href="resources/primer.css" media="screen"/>
+<link rel="stylesheet" href="resources/rec.css" media="screen"/>
+<link rel="stylesheet" href="resources/extra.css" media="screen"/>
+<link rel="stylesheet" href="resources/owl.css" media="screen"/>
+<link rel="stylesheet" href="resources/dark.css" media="(prefers-color-scheme: dark)"/>
+<link rel="stylesheet" href="resources/light.css" media="(prefers-color-scheme: light)"/>
+<link rel="stylesheet" href="resources/slider.css" media="screen"/>
+<meta name="color-scheme" content="dark light">
+<script type="module" src="resources/dark-mode-toggle.mjs"></script><div class="darkmode">
+	<dark-mode-toggle class="slider"></dark-mode-toggle>
+</div>
+ <title>Medical Devices Ontology</title>
+
+
+<!-- SCHEMA.ORG METADATA -->
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","url":"http://www.example.org/medicalOntology#","image":"http://vowl.visualdataweb.org/webvowl/#iri=http://www.example.org/medicalOntology#","name":"Medical Devices Ontology", "headline":"Document describing the ontology http://www.example.org/medicalOntology#", "dateReleased":"Fri Apr 17 23:42:54 CEST 2026", "author":[{"@type":"Person","name":"David Bou Catalán"}]}</script>
+
+<script src="resources/jquery.js"></script> 
+<script src="resources/marked.min.js"></script> 
+    <script> 
+function loadHash() {
+  jQuery(".markdown").each(function(el){jQuery(this).after(marked.parse(jQuery(this).text())).remove()});
+	var hash = location.hash;
+	if($(hash).offset()!=null){
+	  $('html, body').animate({scrollTop: $(hash).offset().top}, 0);
+}
+	loadTOC();
+}
+function loadTOC(){
+	//process toc dynamically
+	  var t='<h2>Table of contents</h2><ul>';i = 1;j=0;
+	  jQuery(".list").each(function(){
+		if(jQuery(this).is('h2')){
+			if(j>0){
+				t+='</ul>';
+				j=0;
+			}
+			t+= '<li>'+i+'. <a href=#'+ jQuery(this).attr('id')+'>'+ jQuery(this).ignore("span").text()+'</a></li>';
+			i++;
+		}
+		if(jQuery(this).is('h3')){
+			if(j==0){
+				t+='<ul>';
+			}
+			j++;
+			t+= '<li>'+(i-1)+'.'+j+'. '+'<a href=#'+ jQuery(this).attr('id')+'>'+ jQuery(this).ignore("span").text()+'</a></li>';
+		}
+	  });
+	  t+='</ul>';
+	  $("#toc").html(t); 
+}
+$(function(){
+    loadHash();
+}); $.fn.ignore = function(sel){
+        return this.clone().find(sel||">*").remove().end();
+ }; 
+   </script> 
+  </head> 
+
+<body>
+<div class="container">
+<div class="head">
+<div style="float:right">language <a href="index-en.html"><b>en</b></a> </div>
+<h1>Medical Devices Ontology</h1>
+
+
+<dl>
+<dt>Latest version:</dt>
+<dd><a href="http://www.example.org/medicalOntology#">http://www.example.org/medicalOntology#</a></dd>
+<dt>Authors:</dt>
+<dd>David Bou Catalán</dd>
+
+<dt>Download serialization:</dt><dd><span><a href="ontology.jsonld" target="_blank"><img src="https://img.shields.io/badge/Format-JSON_LD-blue.svg" alt="JSON-LD" /></a> </span><span><a href="ontology.owl" target="_blank"><img src="https://img.shields.io/badge/Format-RDF/XML-blue.svg" alt="RDF/XML" /></a> </span><span><a href="ontology.nt" target="_blank"><img src="https://img.shields.io/badge/Format-N_Triples-blue.svg" alt="N-Triples" /></a> </span><span><a href="ontology.ttl" target="_blank"><img src="https://img.shields.io/badge/Format-TTL-blue.svg" alt="TTL" /></a> </span></dd><dt>License:</dt><dd><a href="http://insertlicenseURIhere.example.org" target="_blank"><img src="https://img.shields.io/badge/License-license%20name%20goes%20here-blue.svg" alt="http://insertlicenseURIhere.example.org" /></a>
+</dd><dt>Visualization:</dt><dd><a href="webvowl/index.html#" target="_blank"><img src="https://img.shields.io/badge/Visualize_with-WebVowl-blue.svg" alt="Visualize with WebVowl" /></a></dd>
+<dt>Evaluation:</dt><dd><a href="OOPSevaluation/oopsEval.html#" target="_blank"><img src="https://img.shields.io/badge/Evaluate_with-OOPS! (OntOlogy Pitfall Scanner!)-blue.svg" alt="Evaluate with OOPS!" /></a></dd><dt>Cite as:</dt>
+<dd>David Bou Catalán. Medical Devices Ontology.</dd>
+</dl>
+
+<hr/>
+</div>
+<div class="status">
+<div>
+<span>Ontology Specification Draft</span>
+</div>
+</div>     <div id="abstract"><h2>Abstract</h2><span class="markdown">
+This is a placeholder text for the abstract. The abstract should contain a couple of sentences summarizing the ontology and its purpose.</span>
+</div>
+<div id="toc"></div> 
+
+<!--INTRODUCTION SECTION-->
+    <div id="introduction"><h2 id="intro" class="list">Introduction <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<span class="markdown">
+This is a place holder text for the introduction. The introduction should briefly describe the ontology, its motivation, state of the art and goals.</span>
+</div>
+  
+
+<!--OVERVIEW SECTION-->
+    <div id="overview"><h2 id="overv" class="list">Medical Ontology: Overview <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<span class="markdown">
+This ontology has the following classes and properties.</span>
+<h4>Classes</h4>
+<ul xmlns:widoco="https://w3id.org/widoco/vocab#"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    class="hlist">
+   <li>
+      <a href="#ActiveDevice"
+         title="http://www.example.org/medicalOntology#ActiveDevice">Active Device</a>
+   </li>
+   <li>
+      <a href="#ActiveImplant"
+         title="http://www.example.org/medicalOntology#ActiveImplant">Active Implant</a>
+   </li>
+   <li>
+      <a href="#ContaminationRisk"
+         title="http://www.example.org/medicalOntology#ContaminationRisk">Contamination Risk</a>
+   </li>
+   <li>
+      <a href="#CorrectiveAction"
+         title="http://www.example.org/medicalOntology#CorrectiveAction">Corrective Action</a>
+   </li>
+   <li>
+      <a href="#CybersecurityRisk"
+         title="http://www.example.org/medicalOntology#CybersecurityRisk">Cybersecurity Risk</a>
+   </li>
+   <li>
+      <a href="#Device" title="http://www.example.org/medicalOntology#Device">Device</a>
+   </li>
+   <li>
+      <a href="#DiagnosticRisk"
+         title="http://www.example.org/medicalOntology#DiagnosticRisk">Diagnostic Risk</a>
+   </li>
+   <li>
+      <a href="#ImplantableActiveDevice"
+         title="http://www.example.org/medicalOntology#ImplantableActiveDevice">Implantable Active Device</a>
+   </li>
+   <li>
+      <a href="#ImplantableDevice"
+         title="http://www.example.org/medicalOntology#ImplantableDevice">Implantable Device</a>
+   </li>
+   <li>
+      <a href="#Incident" title="http://www.example.org/medicalOntology#Incident">Incident</a>
+   </li>
+   <li>
+      <a href="#InfectionRisk"
+         title="http://www.example.org/medicalOntology#InfectionRisk">Infection Risk</a>
+   </li>
+   <li>
+      <a href="#InjuryRisk"
+         title="http://www.example.org/medicalOntology#InjuryRisk">Injury Risk</a>
+   </li>
+   <li>
+      <a href="#InterferenceRisk"
+         title="http://www.example.org/medicalOntology#InterferenceRisk">Interference Risk</a>
+   </li>
+   <li>
+      <a href="#IVDDevice" title="http://www.example.org/medicalOntology#IVDDevice">IVD Device</a>
+   </li>
+   <li>
+      <a href="#MalfunctionRisk"
+         title="http://www.example.org/medicalOntology#MalfunctionRisk">Malfunction Risk</a>
+   </li>
+   <li>
+      <a href="#Manufacturer"
+         title="http://www.example.org/medicalOntology#Manufacturer">Manufacturer</a>
+   </li>
+   <li>
+      <a href="#MaterialRisk"
+         title="http://www.example.org/medicalOntology#MaterialRisk">Material Risk</a>
+   </li>
+   <li>
+      <a href="#NearMissIncident"
+         title="http://www.example.org/medicalOntology#NearMissIncident">Near Miss Incident</a>
+   </li>
+   <li>
+      <a href="#RadiationRisk"
+         title="http://www.example.org/medicalOntology#RadiationRisk">Radiation Risk</a>
+   </li>
+   <li>
+      <a href="#Risk" title="http://www.example.org/medicalOntology#Risk">Risk</a>
+   </li>
+   <li>
+      <a href="#SelfTestDevice"
+         title="http://www.example.org/medicalOntology#SelfTestDevice">Self Test Device</a>
+   </li>
+   <li>
+      <a href="#SeriousIncident"
+         title="http://www.example.org/medicalOntology#SeriousIncident">Serious Incident</a>
+   </li>
+   <li>
+      <a href="#SingleUseDevice"
+         title="http://www.example.org/medicalOntology#SingleUseDevice">Single Use Device</a>
+   </li>
+   <li>
+      <a href="#SoftwareRisk"
+         title="http://www.example.org/medicalOntology#SoftwareRisk">Software Risk</a>
+   </li>
+</ul><h4>Object Properties</h4><ul xmlns:widoco="https://w3id.org/widoco/vocab#"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    class="hlist">
+   <li>
+      <a href="#affectsDevice"
+         title="http://www.example.org/medicalOntology#affectsDevice">affects device</a>
+   </li>
+   <li>
+      <a href="#derivedFrom"
+         title="http://www.example.org/medicalOntology#derivedFrom">derived from</a>
+   </li>
+   <li>
+      <a href="#hasManufacturer"
+         title="http://www.example.org/medicalOntology#hasManufacturer">has manufacturer</a>
+   </li>
+   <li>
+      <a href="#hasRisk" title="http://www.example.org/medicalOntology#hasRisk">has risk</a>
+   </li>
+   <li>
+      <a href="#reportedBy"
+         title="http://www.example.org/medicalOntology#reportedBy">reported by</a>
+   </li>
+</ul><h4>Data Properties</h4><ul xmlns:widoco="https://w3id.org/widoco/vocab#"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    class="hlist">
+   <li>
+      <a href="#actionType"
+         title="http://www.example.org/medicalOntology#actionType">action type</a>
+   </li>
+   <li>
+      <a href="#affectedDeviceType"
+         title="http://www.example.org/medicalOntology#affectedDeviceType">affected device type</a>
+   </li>
+   <li>
+      <a href="#correctiveActionDescription"
+         title="http://www.example.org/medicalOntology#correctiveActionDescription">corrective action description</a>
+   </li>
+   <li>
+      <a href="#correctiveActionTaken"
+         title="http://www.example.org/medicalOntology#correctiveActionTaken">corrective action taken</a>
+   </li>
+   <li>
+      <a href="#countriesAffected"
+         title="http://www.example.org/medicalOntology#countriesAffected">countries affected</a>
+   </li>
+   <li>
+      <a href="#country" title="http://www.example.org/medicalOntology#country">
+         <span>country</span>
+      </a>
+   </li>
+   <li>
+      <a href="#countryReported"
+         title="http://www.example.org/medicalOntology#countryReported">country reported</a>
+   </li>
+   <li>
+      <a href="#deviceId" title="http://www.example.org/medicalOntology#deviceId">device id</a>
+   </li>
+   <li>
+      <a href="#deviceName"
+         title="http://www.example.org/medicalOntology#deviceName">device name</a>
+   </li>
+   <li>
+      <a href="#deviceType"
+         title="http://www.example.org/medicalOntology#deviceType">device type</a>
+   </li>
+   <li>
+      <a href="#devicesAffected"
+         title="http://www.example.org/medicalOntology#devicesAffected">devices affected</a>
+   </li>
+   <li>
+      <a href="#fscaId" title="http://www.example.org/medicalOntology#fscaId">fsca id</a>
+   </li>
+   <li>
+      <a href="#incidentDescription"
+         title="http://www.example.org/medicalOntology#incidentDescription">incident description</a>
+   </li>
+   <li>
+      <a href="#incidentId"
+         title="http://www.example.org/medicalOntology#incidentId">incident id</a>
+   </li>
+   <li>
+      <a href="#incidentType"
+         title="http://www.example.org/medicalOntology#incidentType">incident type</a>
+   </li>
+   <li>
+      <a href="#intendedPurpose"
+         title="http://www.example.org/medicalOntology#intendedPurpose">intended purpose</a>
+   </li>
+   <li>
+      <a href="#manufacturerId"
+         title="http://www.example.org/medicalOntology#manufacturerId">manufacturer id</a>
+   </li>
+   <li>
+      <a href="#manufacturerName"
+         title="http://www.example.org/medicalOntology#manufacturerName">name</a>
+   </li>
+   <li>
+      <a href="#outcome" title="http://www.example.org/medicalOntology#outcome">outcome</a>
+   </li>
+   <li>
+      <a href="#patientAge"
+         title="http://www.example.org/medicalOntology#patientAge">patient age</a>
+   </li>
+   <li>
+      <a href="#patientSex"
+         title="http://www.example.org/medicalOntology#patientSex">patient sex</a>
+   </li>
+   <li>
+      <a href="#riskCategory"
+         title="http://www.example.org/medicalOntology#riskCategory">risk category</a>
+   </li>
+   <li>
+      <a href="#riskClass" title="http://www.example.org/medicalOntology#riskClass">risk class</a>
+   </li>
+   <li>
+      <a href="#riskDescription"
+         title="http://www.example.org/medicalOntology#riskDescription">risk description</a>
+   </li>
+   <li>
+      <a href="#riskId" title="http://www.example.org/medicalOntology#riskId">risk id</a>
+   </li>
+   <li>
+      <a href="#riskName" title="http://www.example.org/medicalOntology#riskName">risk name</a>
+   </li>
+   <li>
+      <a href="#riskType" title="http://www.example.org/medicalOntology#riskType">risk type</a>
+   </li>
+   <li>
+      <a href="#scope" title="http://www.example.org/medicalOntology#scope">scope</a>
+   </li>
+   <li>
+      <a href="#status" title="http://www.example.org/medicalOntology#status">status</a>
+   </li>
+</ul><h4>Named Individuals</h4><ul xmlns:widoco="https://w3id.org/widoco/vocab#"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    class="hlist">
+   <li>
+      <a href="#http://dbpedia.org/resource/Abbott_Laboratories" title="http://dbpedia.org/resource/Abbott_Laboratories">
+         <span>Abbott Laboratories</span>
+      </a>
+   </li>
+   <li>
+      <a href="#http://dbpedia.org/resource/Boston_Scientific" title="http://dbpedia.org/resource/Boston_Scientific">
+         <span>Boston Scientific</span>
+      </a>
+   </li>
+   <li>
+      <a href="#FSCA-001" title="http://www.example.org/medicalOntology#FSCA-001">CorrectiveAction 001 - Safety alert for HeartMate thrombosis risk</a>
+   </li>
+   <li>
+      <a href="#FSCA-002" title="http://www.example.org/medicalOntology#FSCA-002">CorrectiveAction 002 - Recall of Micra AV devices</a>
+   </li>
+   <li>
+      <a href="#FSCA-003" title="http://www.example.org/medicalOntology#FSCA-003">CorrectiveAction 003 - Portico valve deployment improvement</a>
+   </li>
+   <li>
+      <a href="#FSCA-004" title="http://www.example.org/medicalOntology#FSCA-004">CorrectiveAction 004 - Safety communication for ACUITY X4 lead</a>
+   </li>
+   <li>
+      <a href="#DEV-001" title="http://www.example.org/medicalOntology#DEV-001">Device 001 - HeartMate 3 LVAD</a>
+   </li>
+   <li>
+      <a href="#DEV-002" title="http://www.example.org/medicalOntology#DEV-002">Device 002 - Micra AV Transcatheter Pacing System</a>
+   </li>
+   <li>
+      <a href="#DEV-003" title="http://www.example.org/medicalOntology#DEV-003">Device 003 - Portico Transcatheter Heart Valve</a>
+   </li>
+   <li>
+      <a href="#DEV-004" title="http://www.example.org/medicalOntology#DEV-004">Device 004 - SYNERGY Stent System</a>
+   </li>
+   <li>
+      <a href="#DEV-005" title="http://www.example.org/medicalOntology#DEV-005">Device 005 - ACUITY X4 Quadripolar LV Lead</a>
+   </li>
+   <li>
+      <a href="#INC-001" title="http://www.example.org/medicalOntology#INC-001">Incident 001 - Serious patient injury - embolic stroke</a>
+   </li>
+   <li>
+      <a href="#INC-002" title="http://www.example.org/medicalOntology#INC-002">Incident 002 - Device malfunction - premature battery depletion</a>
+   </li>
+   <li>
+      <a href="#INC-003" title="http://www.example.org/medicalOntology#INC-003">Incident 003 - Surgical intervention required - valve re-anchoring</a>
+   </li>
+   <li>
+      <a href="#INC-004" title="http://www.example.org/medicalOntology#INC-004">Incident 004 - Device malfunction - stent fracture</a>
+   </li>
+   <li>
+      <a href="#INC-005" title="http://www.example.org/medicalOntology#INC-005">Incident 005 - Surgical intervention required - lead extraction</a>
+   </li>
+   <li>
+      <a href="#MAN-001" title="http://www.example.org/medicalOntology#MAN-001">Manufacturer 001 - Medtronic plc</a>
+   </li>
+   <li>
+      <a href="#MAN-002" title="http://www.example.org/medicalOntology#MAN-002">Manufacturer 002 - Abbott Medical Devices</a>
+   </li>
+   <li>
+      <a href="#MAN-006" title="http://www.example.org/medicalOntology#MAN-006">Manufacturer 006 - Boston Scientific Corporation</a>
+   </li>
+   <li>
+      <a href="#http://dbpedia.org/resource/Medtronic" title="http://dbpedia.org/resource/Medtronic">
+         <span>Medtronic</span>
+      </a>
+   </li>
+   <li>
+      <a href="#RSK-002" title="http://www.example.org/medicalOntology#RSK-002">Risk 001 - Device failure - mechanical</a>
+   </li>
+   <li>
+      <a href="#RSK-003" title="http://www.example.org/medicalOntology#RSK-003">Risk 003 - Thrombosis - device-related</a>
+   </li>
+   <li>
+      <a href="#RSK-005" title="http://www.example.org/medicalOntology#RSK-005">Risk 005 - Device migration - implant</a>
+   </li>
+   <li>
+      <a href="#RSK-006" title="http://www.example.org/medicalOntology#RSK-006">Risk 006 - Lead dislodgement</a>
+   </li>
+   <li>
+      <a href="#RSK-009" title="http://www.example.org/medicalOntology#RSK-009">Risk 009 - Battery depletion - premature</a>
+   </li>
+</ul><iframe src="webvowl/index.html"></iframe> 
+</div>
+  
+
+<!--DESCRIPTION SECTION-->
+    <div id="description"><h2 id="desc" class="list">Medical Ontology: Description <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+
+<span class="markdown">Ontology describing medical devices, incidents, risks and corrective actions for regulatory and safety analysis.</span></div>
+   
+
+<!--CROSSREF SECTION-->
+   <div id="crossref"><h2 id="crossreference" class="list">Cross-reference for Medical Ontology classes, object properties and data properties <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+This section provides details for each class and property defined by Medical Ontology.
+<div xmlns:widoco="https://w3id.org/widoco/vocab#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="classes">
+ <h3 id="classes-headline" class="list">Classes</h3>
+ <ul class="hlist">
+  <li><a href="#ActiveDevice" title="http://www.example.org/medicalOntology#ActiveDevice">Active Device</a></li>
+  <li><a href="#ActiveImplant" title="http://www.example.org/medicalOntology#ActiveImplant">Active Implant</a></li>
+  <li><a href="#ContaminationRisk" title="http://www.example.org/medicalOntology#ContaminationRisk">Contamination Risk</a></li>
+  <li><a href="#CorrectiveAction" title="http://www.example.org/medicalOntology#CorrectiveAction">Corrective Action</a></li>
+  <li><a href="#CybersecurityRisk" title="http://www.example.org/medicalOntology#CybersecurityRisk">Cybersecurity Risk</a></li>
+  <li><a href="#Device" title="http://www.example.org/medicalOntology#Device">Device</a></li>
+  <li><a href="#DiagnosticRisk" title="http://www.example.org/medicalOntology#DiagnosticRisk">Diagnostic Risk</a></li>
+  <li><a href="#ImplantableActiveDevice" title="http://www.example.org/medicalOntology#ImplantableActiveDevice">Implantable Active Device</a></li>
+  <li><a href="#ImplantableDevice" title="http://www.example.org/medicalOntology#ImplantableDevice">Implantable Device</a></li>
+  <li><a href="#Incident" title="http://www.example.org/medicalOntology#Incident">Incident</a></li>
+  <li><a href="#InfectionRisk" title="http://www.example.org/medicalOntology#InfectionRisk">Infection Risk</a></li>
+  <li><a href="#InjuryRisk" title="http://www.example.org/medicalOntology#InjuryRisk">Injury Risk</a></li>
+  <li><a href="#InterferenceRisk" title="http://www.example.org/medicalOntology#InterferenceRisk">Interference Risk</a></li>
+  <li><a href="#IVDDevice" title="http://www.example.org/medicalOntology#IVDDevice">IVD Device</a></li>
+  <li><a href="#MalfunctionRisk" title="http://www.example.org/medicalOntology#MalfunctionRisk">Malfunction Risk</a></li>
+  <li><a href="#Manufacturer" title="http://www.example.org/medicalOntology#Manufacturer">Manufacturer</a></li>
+  <li><a href="#MaterialRisk" title="http://www.example.org/medicalOntology#MaterialRisk">Material Risk</a></li>
+  <li><a href="#NearMissIncident" title="http://www.example.org/medicalOntology#NearMissIncident">Near Miss Incident</a></li>
+  <li><a href="#RadiationRisk" title="http://www.example.org/medicalOntology#RadiationRisk">Radiation Risk</a></li>
+  <li><a href="#Risk" title="http://www.example.org/medicalOntology#Risk">Risk</a></li>
+  <li><a href="#SelfTestDevice" title="http://www.example.org/medicalOntology#SelfTestDevice">Self Test Device</a></li>
+  <li><a href="#SeriousIncident" title="http://www.example.org/medicalOntology#SeriousIncident">Serious Incident</a></li>
+  <li><a href="#SingleUseDevice" title="http://www.example.org/medicalOntology#SingleUseDevice">Single Use Device</a></li>
+  <li><a href="#SoftwareRisk" title="http://www.example.org/medicalOntology#SoftwareRisk">Software Risk</a></li>
+ </ul>
+ <div class="entity" id="ActiveDevice">
+  <h3>Active Device<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.example.org/medicalOntology#ActiveDevice</p>
+  <div class="comment">
+   <span class="markdown">Active medical device</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#Device" title="http://www.example.org/medicalOntology#Device">Device</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="ActiveImplant">
+  <h3>Active Implant<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.example.org/medicalOntology#ActiveImplant</p>
+  <div class="comment">
+   <span class="markdown">Active implant device</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#Device" title="http://www.example.org/medicalOntology#Device">Device</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    has members
+   </dt>
+   <dd>
+    <a href="#DEV-002" title="http://www.example.org/medicalOntology#DEV-002">Device 002 - Micra AV Transcatheter Pacing System</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#DEV-005" title="http://www.example.org/medicalOntology#DEV-005">Device 005 - ACUITY X4 Quadripolar LV Lead</a> <sup class="type-ni" title="named individual">ni</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="ContaminationRisk">
+  <h3>Contamination Risk<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.example.org/medicalOntology#ContaminationRisk</p>
+  <div class="comment">
+   <span class="markdown">Risk related to contamination on the device</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#Risk" title="http://www.example.org/medicalOntology#Risk">Risk</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="CorrectiveAction">
+  <h3>Corrective Action<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.example.org/medicalOntology#CorrectiveAction</p>
+  <div class="comment">
+   <span class="markdown">Action taken to correct an incident</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd></dd>
+   <dt>
+    is in domain of
+   </dt>
+   <dd>
+    <a href="#actionType" title="http://www.example.org/medicalOntology#actionType">action type</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#correctiveActionDescription" title="http://www.example.org/medicalOntology#correctiveActionDescription">corrective action description</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#countriesAffected" title="http://www.example.org/medicalOntology#countriesAffected">countries affected</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#derivedFrom" title="http://www.example.org/medicalOntology#derivedFrom">derived from</a> <sup class="type-op" title="object property">op</sup>, <a href="#devicesAffected" title="http://www.example.org/medicalOntology#devicesAffected">devices affected</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#fscaId" title="http://www.example.org/medicalOntology#fscaId">fsca id</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#scope" title="http://www.example.org/medicalOntology#scope">scope</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#status" title="http://www.example.org/medicalOntology#status">status</a> <sup class="type-dp" title="data property">dp</sup>
+   </dd>
+   <dt>
+    has members
+   </dt>
+   <dd>
+    <a href="#FSCA-001" title="http://www.example.org/medicalOntology#FSCA-001">CorrectiveAction 001 - Safety alert for HeartMate thrombosis risk</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#FSCA-002" title="http://www.example.org/medicalOntology#FSCA-002">CorrectiveAction 002 - Recall of Micra AV devices</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#FSCA-003" title="http://www.example.org/medicalOntology#FSCA-003">CorrectiveAction 003 - Portico valve deployment improvement</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#FSCA-004" title="http://www.example.org/medicalOntology#FSCA-004">CorrectiveAction 004 - Safety communication for ACUITY X4 lead</a> <sup class="type-ni" title="named individual">ni</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="CybersecurityRisk">
+  <h3>Cybersecurity Risk<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.example.org/medicalOntology#CybersecurityRisk</p>
+  <div class="comment">
+   <span class="markdown">Risk related to cybersecurity issues</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#Risk" title="http://www.example.org/medicalOntology#Risk">Risk</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="Device">
+  <h3>Device<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.example.org/medicalOntology#Device</p>
+  <div class="comment">
+   <span class="markdown">Medical device</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd></dd>
+   <dt>
+    has sub-classes
+   </dt>
+   <dd>
+    <a href="#ActiveDevice" title="http://www.example.org/medicalOntology#ActiveDevice">Active Device</a> <sup class="type-c" title="class">c</sup>, <a href="#ActiveImplant" title="http://www.example.org/medicalOntology#ActiveImplant">Active Implant</a> <sup class="type-c" title="class">c</sup>, <a href="#IVDDevice" title="http://www.example.org/medicalOntology#IVDDevice">IVD Device</a> <sup class="type-c" title="class">c</sup>, <a href="#ImplantableActiveDevice" title="http://www.example.org/medicalOntology#ImplantableActiveDevice">Implantable Active Device</a> <sup class="type-c" title="class">c</sup>, <a href="#ImplantableDevice" title="http://www.example.org/medicalOntology#ImplantableDevice">Implantable Device</a> <sup class="type-c" title="class">c</sup>, <a href="#SelfTestDevice" title="http://www.example.org/medicalOntology#SelfTestDevice">Self Test Device</a> <sup class="type-c" title="class">c</sup>, <a href="#SingleUseDevice" title="http://www.example.org/medicalOntology#SingleUseDevice">Single Use Device</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is in domain of
+   </dt>
+   <dd>
+    <a href="#deviceId" title="http://www.example.org/medicalOntology#deviceId">device id</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#deviceName" title="http://www.example.org/medicalOntology#deviceName">device name</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#deviceType" title="http://www.example.org/medicalOntology#deviceType">device type</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#hasManufacturer" title="http://www.example.org/medicalOntology#hasManufacturer">has manufacturer</a> <sup class="type-op" title="object property">op</sup>, <a href="#intendedPurpose" title="http://www.example.org/medicalOntology#intendedPurpose">intended purpose</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#riskClass" title="http://www.example.org/medicalOntology#riskClass">risk class</a> <sup class="type-dp" title="data property">dp</sup>
+   </dd>
+   <dt>
+    is in range of
+   </dt>
+   <dd>
+    <a href="#affectsDevice" title="http://www.example.org/medicalOntology#affectsDevice">affects device</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="DiagnosticRisk">
+  <h3>Diagnostic Risk<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.example.org/medicalOntology#DiagnosticRisk</p>
+  <div class="comment">
+   <span class="markdown">Risk of incorrect diagnostic</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#Risk" title="http://www.example.org/medicalOntology#Risk">Risk</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="ImplantableActiveDevice">
+  <h3>Implantable Active Device<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.example.org/medicalOntology#ImplantableActiveDevice</p>
+  <div class="comment">
+   <span class="markdown">Implantable and active medical device</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#Device" title="http://www.example.org/medicalOntology#Device">Device</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    has members
+   </dt>
+   <dd>
+    <a href="#DEV-001" title="http://www.example.org/medicalOntology#DEV-001">Device 001 - HeartMate 3 LVAD</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#DEV-004" title="http://www.example.org/medicalOntology#DEV-004">Device 004 - SYNERGY Stent System</a> <sup class="type-ni" title="named individual">ni</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="ImplantableDevice">
+  <h3>Implantable Device<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.example.org/medicalOntology#ImplantableDevice</p>
+  <div class="comment">
+   <span class="markdown">Implantable medical device</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#Device" title="http://www.example.org/medicalOntology#Device">Device</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    has members
+   </dt>
+   <dd>
+    <a href="#DEV-003" title="http://www.example.org/medicalOntology#DEV-003">Device 003 - Portico Transcatheter Heart Valve</a> <sup class="type-ni" title="named individual">ni</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="Incident">
+  <h3>Incident<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.example.org/medicalOntology#Incident</p>
+  <div class="comment">
+   <span class="markdown">Device malfunction</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd></dd>
+   <dt>
+    has sub-classes
+   </dt>
+   <dd>
+    <a href="#NearMissIncident" title="http://www.example.org/medicalOntology#NearMissIncident">Near Miss Incident</a> <sup class="type-c" title="class">c</sup>, <a href="#SeriousIncident" title="http://www.example.org/medicalOntology#SeriousIncident">Serious Incident</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is in domain of
+   </dt>
+   <dd>
+    <a href="#affectsDevice" title="http://www.example.org/medicalOntology#affectsDevice">affects device</a> <sup class="type-op" title="object property">op</sup>, <a href="#correctiveActionTaken" title="http://www.example.org/medicalOntology#correctiveActionTaken">corrective action taken</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#countryReported" title="http://www.example.org/medicalOntology#countryReported">country reported</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#hasRisk" title="http://www.example.org/medicalOntology#hasRisk">has risk</a> <sup class="type-op" title="object property">op</sup>, <a href="#incidentDescription" title="http://www.example.org/medicalOntology#incidentDescription">incident description</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#incidentId" title="http://www.example.org/medicalOntology#incidentId">incident id</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#incidentType" title="http://www.example.org/medicalOntology#incidentType">incident type</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#outcome" title="http://www.example.org/medicalOntology#outcome">outcome</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#patientAge" title="http://www.example.org/medicalOntology#patientAge">patient age</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#patientSex" title="http://www.example.org/medicalOntology#patientSex">patient sex</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#reportedBy" title="http://www.example.org/medicalOntology#reportedBy">reported by</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+   <dt>
+    is in range of
+   </dt>
+   <dd>
+    <a href="#derivedFrom" title="http://www.example.org/medicalOntology#derivedFrom">derived from</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="InfectionRisk">
+  <h3>Infection Risk<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.example.org/medicalOntology#InfectionRisk</p>
+  <div class="comment">
+   <span class="markdown">Risk of infection by a medical device</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#Risk" title="http://www.example.org/medicalOntology#Risk">Risk</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="InjuryRisk">
+  <h3>Injury Risk<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.example.org/medicalOntology#InjuryRisk</p>
+  <div class="comment">
+   <span class="markdown">Risk related to physical harm</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#Risk" title="http://www.example.org/medicalOntology#Risk">Risk</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    has members
+   </dt>
+   <dd>
+    <a href="#RSK-003" title="http://www.example.org/medicalOntology#RSK-003">Risk 003 - Thrombosis - device-related</a> <sup class="type-ni" title="named individual">ni</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="InterferenceRisk">
+  <h3>Interference Risk<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.example.org/medicalOntology#InterferenceRisk</p>
+  <div class="comment">
+   <span class="markdown">Risk caused by interference</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#Risk" title="http://www.example.org/medicalOntology#Risk">Risk</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="IVDDevice">
+  <h3>IVD Device<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.example.org/medicalOntology#IVDDevice</p>
+  <div class="comment">
+   <span class="markdown">In vitro diagnostic medical device</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#Device" title="http://www.example.org/medicalOntology#Device">Device</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="MalfunctionRisk">
+  <h3>Malfunction Risk<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.example.org/medicalOntology#MalfunctionRisk</p>
+  <div class="comment">
+   <span class="markdown">Risk related to device malfunction</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#Risk" title="http://www.example.org/medicalOntology#Risk">Risk</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    has members
+   </dt>
+   <dd>
+    <a href="#RSK-002" title="http://www.example.org/medicalOntology#RSK-002">Risk 001 - Device failure - mechanical</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#RSK-005" title="http://www.example.org/medicalOntology#RSK-005">Risk 005 - Device migration - implant</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#RSK-006" title="http://www.example.org/medicalOntology#RSK-006">Risk 006 - Lead dislodgement</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#RSK-009" title="http://www.example.org/medicalOntology#RSK-009">Risk 009 - Battery depletion - premature</a> <sup class="type-ni" title="named individual">ni</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="Manufacturer">
+  <h3>Manufacturer<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.example.org/medicalOntology#Manufacturer</p>
+  <div class="comment">
+   <span class="markdown">Device manufacturer</span>
+  </div>
+  <dl class="description">
+   <dt>
+    is in domain of
+   </dt>
+   <dd>
+    <a href="#country" title="http://www.example.org/medicalOntology#country">country</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#manufacturerId" title="http://www.example.org/medicalOntology#manufacturerId">manufacturer id</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#manufacturerName" title="http://www.example.org/medicalOntology#manufacturerName">name</a> <sup class="type-dp" title="data property">dp</sup>
+   </dd>
+   <dt>
+    is in range of
+   </dt>
+   <dd>
+    <a href="#hasManufacturer" title="http://www.example.org/medicalOntology#hasManufacturer">has manufacturer</a> <sup class="type-op" title="object property">op</sup>, <a href="#reportedBy" title="http://www.example.org/medicalOntology#reportedBy">reported by</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+   <dt>
+    has members
+   </dt>
+   <dd>
+    <a href="#MAN-001" title="http://www.example.org/medicalOntology#MAN-001">Manufacturer 001 - Medtronic plc</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#MAN-002" title="http://www.example.org/medicalOntology#MAN-002">Manufacturer 002 - Abbott Medical Devices</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#MAN-006" title="http://www.example.org/medicalOntology#MAN-006">Manufacturer 006 - Boston Scientific Corporation</a> <sup class="type-ni" title="named individual">ni</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="MaterialRisk">
+  <h3>Material Risk<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.example.org/medicalOntology#MaterialRisk</p>
+  <div class="comment">
+   <span class="markdown">Risk related to degradation of materials</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#Risk" title="http://www.example.org/medicalOntology#Risk">Risk</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="NearMissIncident">
+  <h3>Near Miss Incident<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.example.org/medicalOntology#NearMissIncident</p>
+  <div class="comment">
+   <span class="markdown">Harmless incident</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#Incident" title="http://www.example.org/medicalOntology#Incident">Incident</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="RadiationRisk">
+  <h3>Radiation Risk<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.example.org/medicalOntology#RadiationRisk</p>
+  <div class="comment">
+   <span class="markdown">Risk related to radiation</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#Risk" title="http://www.example.org/medicalOntology#Risk">Risk</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="Risk">
+  <h3>Risk<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.example.org/medicalOntology#Risk</p>
+  <div class="comment">
+   <span class="markdown">Potential hazard of a medical device</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has sub-classes
+   </dt>
+   <dd>
+    <a href="#ContaminationRisk" title="http://www.example.org/medicalOntology#ContaminationRisk">Contamination Risk</a> <sup class="type-c" title="class">c</sup>, <a href="#CybersecurityRisk" title="http://www.example.org/medicalOntology#CybersecurityRisk">Cybersecurity Risk</a> <sup class="type-c" title="class">c</sup>, <a href="#DiagnosticRisk" title="http://www.example.org/medicalOntology#DiagnosticRisk">Diagnostic Risk</a> <sup class="type-c" title="class">c</sup>, <a href="#InfectionRisk" title="http://www.example.org/medicalOntology#InfectionRisk">Infection Risk</a> <sup class="type-c" title="class">c</sup>, <a href="#InjuryRisk" title="http://www.example.org/medicalOntology#InjuryRisk">Injury Risk</a> <sup class="type-c" title="class">c</sup>, <a href="#InterferenceRisk" title="http://www.example.org/medicalOntology#InterferenceRisk">Interference Risk</a> <sup class="type-c" title="class">c</sup>, <a href="#MalfunctionRisk" title="http://www.example.org/medicalOntology#MalfunctionRisk">Malfunction Risk</a> <sup class="type-c" title="class">c</sup>, <a href="#MaterialRisk" title="http://www.example.org/medicalOntology#MaterialRisk">Material Risk</a> <sup class="type-c" title="class">c</sup>, <a href="#RadiationRisk" title="http://www.example.org/medicalOntology#RadiationRisk">Radiation Risk</a> <sup class="type-c" title="class">c</sup>, <a href="#SoftwareRisk" title="http://www.example.org/medicalOntology#SoftwareRisk">Software Risk</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is in domain of
+   </dt>
+   <dd>
+    <a href="#affectedDeviceType" title="http://www.example.org/medicalOntology#affectedDeviceType">affected device type</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#riskCategory" title="http://www.example.org/medicalOntology#riskCategory">risk category</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#riskDescription" title="http://www.example.org/medicalOntology#riskDescription">risk description</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#riskId" title="http://www.example.org/medicalOntology#riskId">risk id</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#riskName" title="http://www.example.org/medicalOntology#riskName">risk name</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#riskType" title="http://www.example.org/medicalOntology#riskType">risk type</a> <sup class="type-dp" title="data property">dp</sup>
+   </dd>
+   <dt>
+    is in range of
+   </dt>
+   <dd>
+    <a href="#hasRisk" title="http://www.example.org/medicalOntology#hasRisk">has risk</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="SelfTestDevice">
+  <h3>Self Test Device<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.example.org/medicalOntology#SelfTestDevice</p>
+  <div class="comment">
+   <span class="markdown">Device for a self test</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#Device" title="http://www.example.org/medicalOntology#Device">Device</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="SeriousIncident">
+  <h3>Serious Incident<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.example.org/medicalOntology#SeriousIncident</p>
+  <div class="comment">
+   <span class="markdown">Serious incident for humans</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#Incident" title="http://www.example.org/medicalOntology#Incident">Incident</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    has members
+   </dt>
+   <dd>
+    <a href="#INC-001" title="http://www.example.org/medicalOntology#INC-001">Incident 001 - Serious patient injury - embolic stroke</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#INC-002" title="http://www.example.org/medicalOntology#INC-002">Incident 002 - Device malfunction - premature battery depletion</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#INC-003" title="http://www.example.org/medicalOntology#INC-003">Incident 003 - Surgical intervention required - valve re-anchoring</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#INC-004" title="http://www.example.org/medicalOntology#INC-004">Incident 004 - Device malfunction - stent fracture</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#INC-005" title="http://www.example.org/medicalOntology#INC-005">Incident 005 - Surgical intervention required - lead extraction</a> <sup class="type-ni" title="named individual">ni</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="SingleUseDevice">
+  <h3>Single Use Device<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.example.org/medicalOntology#SingleUseDevice</p>
+  <div class="comment">
+   <span class="markdown">Device for a single use</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#Device" title="http://www.example.org/medicalOntology#Device">Device</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="SoftwareRisk">
+  <h3>Software Risk<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.example.org/medicalOntology#SoftwareRisk</p>
+  <div class="comment">
+   <span class="markdown">Risk related to software malfunction</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#Risk" title="http://www.example.org/medicalOntology#Risk">Risk</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+</div><div xmlns:widoco="https://w3id.org/widoco/vocab#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="objectproperties">
+ <h3 id="properties" class="list">Object Properties</h3>
+ <ul class="hlist">
+  <li><a href="#affectsDevice" title="http://www.example.org/medicalOntology#affectsDevice">affects device</a></li>
+  <li><a href="#derivedFrom" title="http://www.example.org/medicalOntology#derivedFrom">derived from</a></li>
+  <li><a href="#hasManufacturer" title="http://www.example.org/medicalOntology#hasManufacturer">has manufacturer</a></li>
+  <li><a href="#hasRisk" title="http://www.example.org/medicalOntology#hasRisk">has risk</a></li>
+  <li><a href="#reportedBy" title="http://www.example.org/medicalOntology#reportedBy">reported by</a></li>
+ </ul>
+ <div class="entity" id="affectsDevice">
+  <h3>affects device<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.example.org/medicalOntology#affectsDevice</p>
+  <div class="comment">
+   <span class="markdown">Incident affects a device</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Incident" title="http://www.example.org/medicalOntology#Incident">Incident</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#Device" title="http://www.example.org/medicalOntology#Device">Device</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="derivedFrom">
+  <h3>derived from<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.example.org/medicalOntology#derivedFrom</p>
+  <div class="comment">
+   <span class="markdown">Corrective action derived from an incident</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#CorrectiveAction" title="http://www.example.org/medicalOntology#CorrectiveAction">Corrective Action</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#Incident" title="http://www.example.org/medicalOntology#Incident">Incident</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="hasManufacturer">
+  <h3>has manufacturer<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.example.org/medicalOntology#hasManufacturer</p>
+  <div class="comment">
+   <span class="markdown">Device has a manufacturer</span>
+  </div>
+  <div class="description">
+   <p><strong>has characteristics: </strong> functional</p>
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Device" title="http://www.example.org/medicalOntology#Device">Device</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#Manufacturer" title="http://www.example.org/medicalOntology#Manufacturer">Manufacturer</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="hasRisk">
+  <h3>has risk<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.example.org/medicalOntology#hasRisk</p>
+  <div class="comment">
+   <span class="markdown">Incident has a risk</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Incident" title="http://www.example.org/medicalOntology#Incident">Incident</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#Risk" title="http://www.example.org/medicalOntology#Risk">Risk</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="reportedBy">
+  <h3>reported by<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.example.org/medicalOntology#reportedBy</p>
+  <div class="comment">
+   <span class="markdown">Incident reported by a manufacturer</span>
+  </div>
+  <div class="description">
+   <p><strong>has characteristics: </strong> functional</p>
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Incident" title="http://www.example.org/medicalOntology#Incident">Incident</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#Manufacturer" title="http://www.example.org/medicalOntology#Manufacturer">Manufacturer</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+</div><div xmlns:widoco="https://w3id.org/widoco/vocab#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="dataproperties">
+ <h3 id="dataproperties-headline" class="list">Data Properties</h3>
+ <ul class="hlist">
+  <li><a href="#actionType" title="http://www.example.org/medicalOntology#actionType">action type</a></li>
+  <li><a href="#affectedDeviceType" title="http://www.example.org/medicalOntology#affectedDeviceType">affected device type</a></li>
+  <li><a href="#correctiveActionDescription" title="http://www.example.org/medicalOntology#correctiveActionDescription">corrective action description</a></li>
+  <li><a href="#correctiveActionTaken" title="http://www.example.org/medicalOntology#correctiveActionTaken">corrective action taken</a></li>
+  <li><a href="#countriesAffected" title="http://www.example.org/medicalOntology#countriesAffected">countries affected</a></li>
+  <li><a href="#country" title="http://www.example.org/medicalOntology#country"> <span>country</span> </a></li>
+  <li><a href="#countryReported" title="http://www.example.org/medicalOntology#countryReported">country reported</a></li>
+  <li><a href="#deviceId" title="http://www.example.org/medicalOntology#deviceId">device id</a></li>
+  <li><a href="#deviceName" title="http://www.example.org/medicalOntology#deviceName">device name</a></li>
+  <li><a href="#deviceType" title="http://www.example.org/medicalOntology#deviceType">device type</a></li>
+  <li><a href="#devicesAffected" title="http://www.example.org/medicalOntology#devicesAffected">devices affected</a></li>
+  <li><a href="#fscaId" title="http://www.example.org/medicalOntology#fscaId">fsca id</a></li>
+  <li><a href="#incidentDescription" title="http://www.example.org/medicalOntology#incidentDescription">incident description</a></li>
+  <li><a href="#incidentId" title="http://www.example.org/medicalOntology#incidentId">incident id</a></li>
+  <li><a href="#incidentType" title="http://www.example.org/medicalOntology#incidentType">incident type</a></li>
+  <li><a href="#intendedPurpose" title="http://www.example.org/medicalOntology#intendedPurpose">intended purpose</a></li>
+  <li><a href="#manufacturerId" title="http://www.example.org/medicalOntology#manufacturerId">manufacturer id</a></li>
+  <li><a href="#manufacturerName" title="http://www.example.org/medicalOntology#manufacturerName">name</a></li>
+  <li><a href="#outcome" title="http://www.example.org/medicalOntology#outcome">outcome</a></li>
+  <li><a href="#patientAge" title="http://www.example.org/medicalOntology#patientAge">patient age</a></li>
+  <li><a href="#patientSex" title="http://www.example.org/medicalOntology#patientSex">patient sex</a></li>
+  <li><a href="#riskCategory" title="http://www.example.org/medicalOntology#riskCategory">risk category</a></li>
+  <li><a href="#riskClass" title="http://www.example.org/medicalOntology#riskClass">risk class</a></li>
+  <li><a href="#riskDescription" title="http://www.example.org/medicalOntology#riskDescription">risk description</a></li>
+  <li><a href="#riskId" title="http://www.example.org/medicalOntology#riskId">risk id</a></li>
+  <li><a href="#riskName" title="http://www.example.org/medicalOntology#riskName">risk name</a></li>
+  <li><a href="#riskType" title="http://www.example.org/medicalOntology#riskType">risk type</a></li>
+  <li><a href="#scope" title="http://www.example.org/medicalOntology#scope">scope</a></li>
+  <li><a href="#status" title="http://www.example.org/medicalOntology#status">status</a></li>
+ </ul>
+ <div class="entity" id="actionType">
+  <h3>action type<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.example.org/medicalOntology#actionType</p>
+  <div class="comment">
+   <span class="markdown">Type of corrective action</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#CorrectiveAction" title="http://www.example.org/medicalOntology#CorrectiveAction">Corrective Action</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#string" target="_blank" title="http://www.w3.org/2001/XMLSchema#string">string</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="affectedDeviceType">
+  <h3>affected device type<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.example.org/medicalOntology#affectedDeviceType</p>
+  <div class="comment">
+   <span class="markdown">Type of device affected by the risk</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Risk" title="http://www.example.org/medicalOntology#Risk">Risk</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#string" target="_blank" title="http://www.w3.org/2001/XMLSchema#string">string</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="correctiveActionDescription">
+  <h3>corrective action description<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.example.org/medicalOntology#correctiveActionDescription</p>
+  <div class="comment">
+   <span class="markdown">Description of the corrective action</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#CorrectiveAction" title="http://www.example.org/medicalOntology#CorrectiveAction">Corrective Action</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#string" target="_blank" title="http://www.w3.org/2001/XMLSchema#string">string</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="correctiveActionTaken">
+  <h3>corrective action taken<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.example.org/medicalOntology#correctiveActionTaken</p>
+  <div class="comment">
+   <span class="markdown">A corrective action has been taken?</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Incident" title="http://www.example.org/medicalOntology#Incident">Incident</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#boolean" target="_blank" title="http://www.w3.org/2001/XMLSchema#boolean">boolean</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="countriesAffected">
+  <h3>countries affected<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.example.org/medicalOntology#countriesAffected</p>
+  <div class="comment">
+   <span class="markdown">Countries affected to take the corrective action</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#CorrectiveAction" title="http://www.example.org/medicalOntology#CorrectiveAction">Corrective Action</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#string" target="_blank" title="http://www.w3.org/2001/XMLSchema#string">string</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="country">
+  <h3>country<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.example.org/medicalOntology#country</p>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Manufacturer" title="http://www.example.org/medicalOntology#Manufacturer">Manufacturer</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#string" target="_blank" title="http://www.w3.org/2001/XMLSchema#string">string</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="countryReported">
+  <h3>country reported<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.example.org/medicalOntology#countryReported</p>
+  <div class="comment">
+   <span class="markdown">Country where the incident was reported</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Incident" title="http://www.example.org/medicalOntology#Incident">Incident</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#string" target="_blank" title="http://www.w3.org/2001/XMLSchema#string">string</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="deviceId">
+  <h3>device id<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.example.org/medicalOntology#deviceId</p>
+  <div class="comment">
+   <span class="markdown">Unique identifier of the medical device</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Device" title="http://www.example.org/medicalOntology#Device">Device</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#string" target="_blank" title="http://www.w3.org/2001/XMLSchema#string">string</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="deviceName">
+  <h3>device name<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.example.org/medicalOntology#deviceName</p>
+  <div class="comment">
+   <span class="markdown">Name of the medical device</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Device" title="http://www.example.org/medicalOntology#Device">Device</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#string" target="_blank" title="http://www.w3.org/2001/XMLSchema#string">string</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="deviceType">
+  <h3>device type<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.example.org/medicalOntology#deviceType</p>
+  <div class="comment">
+   <span class="markdown">Type of the medical device</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Device" title="http://www.example.org/medicalOntology#Device">Device</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#string" target="_blank" title="http://www.w3.org/2001/XMLSchema#string">string</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="devicesAffected">
+  <h3>devices affected<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.example.org/medicalOntology#devicesAffected</p>
+  <div class="comment">
+   <span class="markdown">Number of devices affected</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#CorrectiveAction" title="http://www.example.org/medicalOntology#CorrectiveAction">Corrective Action</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#string" target="_blank" title="http://www.w3.org/2001/XMLSchema#string">string</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="fscaId">
+  <h3>fsca id<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.example.org/medicalOntology#fscaId</p>
+  <div class="comment">
+   <span class="markdown">Unique identifier of the corrective action</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#CorrectiveAction" title="http://www.example.org/medicalOntology#CorrectiveAction">Corrective Action</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#string" target="_blank" title="http://www.w3.org/2001/XMLSchema#string">string</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="incidentDescription">
+  <h3>incident description<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.example.org/medicalOntology#incidentDescription</p>
+  <div class="comment">
+   <span class="markdown">Description of the incident</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Incident" title="http://www.example.org/medicalOntology#Incident">Incident</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#string" target="_blank" title="http://www.w3.org/2001/XMLSchema#string">string</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="incidentId">
+  <h3>incident id<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.example.org/medicalOntology#incidentId</p>
+  <div class="comment">
+   <span class="markdown">Unique identifier of the incident</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Incident" title="http://www.example.org/medicalOntology#Incident">Incident</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#string" target="_blank" title="http://www.w3.org/2001/XMLSchema#string">string</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="incidentType">
+  <h3>incident type<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.example.org/medicalOntology#incidentType</p>
+  <div class="comment">
+   <span class="markdown">Type of incident</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Incident" title="http://www.example.org/medicalOntology#Incident">Incident</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#string" target="_blank" title="http://www.w3.org/2001/XMLSchema#string">string</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="intendedPurpose">
+  <h3>intended purpose<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.example.org/medicalOntology#intendedPurpose</p>
+  <div class="comment">
+   <span class="markdown">Intended purpose of the device</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Device" title="http://www.example.org/medicalOntology#Device">Device</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#string" target="_blank" title="http://www.w3.org/2001/XMLSchema#string">string</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="manufacturerId">
+  <h3>manufacturer id<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.example.org/medicalOntology#manufacturerId</p>
+  <div class="comment">
+   <span class="markdown">Unique identifier of the manufacturer</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Manufacturer" title="http://www.example.org/medicalOntology#Manufacturer">Manufacturer</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#string" target="_blank" title="http://www.w3.org/2001/XMLSchema#string">string</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="manufacturerName">
+  <h3>name<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.example.org/medicalOntology#manufacturerName</p>
+  <div class="comment">
+   <span class="markdown">Name of the manufacturer organization</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Manufacturer" title="http://www.example.org/medicalOntology#Manufacturer">Manufacturer</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#string" target="_blank" title="http://www.w3.org/2001/XMLSchema#string">string</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="outcome">
+  <h3>outcome<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.example.org/medicalOntology#outcome</p>
+  <div class="comment">
+   <span class="markdown">Outcome of the incident</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Incident" title="http://www.example.org/medicalOntology#Incident">Incident</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#string" target="_blank" title="http://www.w3.org/2001/XMLSchema#string">string</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="patientAge">
+  <h3>patient age<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.example.org/medicalOntology#patientAge</p>
+  <div class="comment">
+   <span class="markdown">Age of the patient</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Incident" title="http://www.example.org/medicalOntology#Incident">Incident</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#integer" target="_blank" title="http://www.w3.org/2001/XMLSchema#integer">integer</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="patientSex">
+  <h3>patient sex<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.example.org/medicalOntology#patientSex</p>
+  <div class="comment">
+   <span class="markdown">Sex of the patient</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Incident" title="http://www.example.org/medicalOntology#Incident">Incident</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#string" target="_blank" title="http://www.w3.org/2001/XMLSchema#string">string</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="riskCategory">
+  <h3>risk category<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.example.org/medicalOntology#riskCategory</p>
+  <div class="comment">
+   <span class="markdown">Category of the risk</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Risk" title="http://www.example.org/medicalOntology#Risk">Risk</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#string" target="_blank" title="http://www.w3.org/2001/XMLSchema#string">string</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="riskClass">
+  <h3>risk class<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.example.org/medicalOntology#riskClass</p>
+  <div class="comment">
+   <span class="markdown">Risk class of the device</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Device" title="http://www.example.org/medicalOntology#Device">Device</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#string" target="_blank" title="http://www.w3.org/2001/XMLSchema#string">string</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="riskDescription">
+  <h3>risk description<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.example.org/medicalOntology#riskDescription</p>
+  <div class="comment">
+   <span class="markdown">Description of the risk</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Risk" title="http://www.example.org/medicalOntology#Risk">Risk</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#string" target="_blank" title="http://www.w3.org/2001/XMLSchema#string">string</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="riskId">
+  <h3>risk id<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.example.org/medicalOntology#riskId</p>
+  <div class="comment">
+   <span class="markdown">Unique identifier of the risk</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Risk" title="http://www.example.org/medicalOntology#Risk">Risk</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#string" target="_blank" title="http://www.w3.org/2001/XMLSchema#string">string</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="riskName">
+  <h3>risk name<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.example.org/medicalOntology#riskName</p>
+  <div class="comment">
+   <span class="markdown">Name of the risk</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Risk" title="http://www.example.org/medicalOntology#Risk">Risk</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#string" target="_blank" title="http://www.w3.org/2001/XMLSchema#string">string</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="riskType">
+  <h3>risk type<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.example.org/medicalOntology#riskType</p>
+  <div class="comment">
+   <span class="markdown">Type of risk</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Risk" title="http://www.example.org/medicalOntology#Risk">Risk</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#string" target="_blank" title="http://www.w3.org/2001/XMLSchema#string">string</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="scope">
+  <h3>scope<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.example.org/medicalOntology#scope</p>
+  <div class="comment">
+   <span class="markdown">Scope of the corrective action</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#CorrectiveAction" title="http://www.example.org/medicalOntology#CorrectiveAction">Corrective Action</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#string" target="_blank" title="http://www.w3.org/2001/XMLSchema#string">string</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="status">
+  <h3>status<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.example.org/medicalOntology#status</p>
+  <div class="comment">
+   <span class="markdown">Current status of the corrective action</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#CorrectiveAction" title="http://www.example.org/medicalOntology#CorrectiveAction">Corrective Action</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#string" target="_blank" title="http://www.w3.org/2001/XMLSchema#string">string</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+</div><div xmlns:widoco="https://w3id.org/widoco/vocab#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="namedindividuals">
+ <h3 id="namedindividuals" class="list">Named Individuals</h3>
+ <ul class="hlist">
+  <li><a href="#http://dbpedia.org/resource/Abbott_Laboratories" title="http://dbpedia.org/resource/Abbott_Laboratories"> <span>Abbott Laboratories</span> </a></li>
+  <li><a href="#http://dbpedia.org/resource/Boston_Scientific" title="http://dbpedia.org/resource/Boston_Scientific"> <span>Boston Scientific</span> </a></li>
+  <li><a href="#FSCA-001" title="http://www.example.org/medicalOntology#FSCA-001">CorrectiveAction 001 - Safety alert for HeartMate thrombosis risk</a></li>
+  <li><a href="#FSCA-002" title="http://www.example.org/medicalOntology#FSCA-002">CorrectiveAction 002 - Recall of Micra AV devices</a></li>
+  <li><a href="#FSCA-003" title="http://www.example.org/medicalOntology#FSCA-003">CorrectiveAction 003 - Portico valve deployment improvement</a></li>
+  <li><a href="#FSCA-004" title="http://www.example.org/medicalOntology#FSCA-004">CorrectiveAction 004 - Safety communication for ACUITY X4 lead</a></li>
+  <li><a href="#DEV-001" title="http://www.example.org/medicalOntology#DEV-001">Device 001 - HeartMate 3 LVAD</a></li>
+  <li><a href="#DEV-002" title="http://www.example.org/medicalOntology#DEV-002">Device 002 - Micra AV Transcatheter Pacing System</a></li>
+  <li><a href="#DEV-003" title="http://www.example.org/medicalOntology#DEV-003">Device 003 - Portico Transcatheter Heart Valve</a></li>
+  <li><a href="#DEV-004" title="http://www.example.org/medicalOntology#DEV-004">Device 004 - SYNERGY Stent System</a></li>
+  <li><a href="#DEV-005" title="http://www.example.org/medicalOntology#DEV-005">Device 005 - ACUITY X4 Quadripolar LV Lead</a></li>
+  <li><a href="#INC-001" title="http://www.example.org/medicalOntology#INC-001">Incident 001 - Serious patient injury - embolic stroke</a></li>
+  <li><a href="#INC-002" title="http://www.example.org/medicalOntology#INC-002">Incident 002 - Device malfunction - premature battery depletion</a></li>
+  <li><a href="#INC-003" title="http://www.example.org/medicalOntology#INC-003">Incident 003 - Surgical intervention required - valve re-anchoring</a></li>
+  <li><a href="#INC-004" title="http://www.example.org/medicalOntology#INC-004">Incident 004 - Device malfunction - stent fracture</a></li>
+  <li><a href="#INC-005" title="http://www.example.org/medicalOntology#INC-005">Incident 005 - Surgical intervention required - lead extraction</a></li>
+  <li><a href="#MAN-001" title="http://www.example.org/medicalOntology#MAN-001">Manufacturer 001 - Medtronic plc</a></li>
+  <li><a href="#MAN-002" title="http://www.example.org/medicalOntology#MAN-002">Manufacturer 002 - Abbott Medical Devices</a></li>
+  <li><a href="#MAN-006" title="http://www.example.org/medicalOntology#MAN-006">Manufacturer 006 - Boston Scientific Corporation</a></li>
+  <li><a href="#http://dbpedia.org/resource/Medtronic" title="http://dbpedia.org/resource/Medtronic"> <span>Medtronic</span> </a></li>
+  <li><a href="#RSK-002" title="http://www.example.org/medicalOntology#RSK-002">Risk 001 - Device failure - mechanical</a></li>
+  <li><a href="#RSK-003" title="http://www.example.org/medicalOntology#RSK-003">Risk 003 - Thrombosis - device-related</a></li>
+  <li><a href="#RSK-005" title="http://www.example.org/medicalOntology#RSK-005">Risk 005 - Device migration - implant</a></li>
+  <li><a href="#RSK-006" title="http://www.example.org/medicalOntology#RSK-006">Risk 006 - Lead dislodgement</a></li>
+  <li><a href="#RSK-009" title="http://www.example.org/medicalOntology#RSK-009">Risk 009 - Battery depletion - premature</a></li>
+ </ul>
+ <div class="entity" id="http://dbpedia.org/resource/Abbott_Laboratories">
+  <h3>Abbott Laboratories<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://dbpedia.org/resource/Abbott_Laboratories</p>
+  <dl class="description">
+   <dt>
+    is same as
+   </dt>
+   <dd>
+    <a href="#MAN-002" title="http://www.example.org/medicalOntology#MAN-002">Manufacturer 002 - Abbott Medical Devices</a> <sup class="type-ni" title="named individual">ni</sup>
+   </dd>
+   <dt>
+    has facts
+   </dt>
+   <dd>
+    <a href="http://www.w3.org/2002/07/owl#sameAs" target="_blank" title="http://www.w3.org/2002/07/owl#sameAs">same As</a> <sup class="type-ep" title="external property">ep</sup> <a href="#MAN-002" title="http://www.example.org/medicalOntology#MAN-002">Manufacturer 002 - Abbott Medical Devices</a> <sup class="type-ni" title="named individual">ni</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="http://dbpedia.org/resource/Boston_Scientific">
+  <h3>Boston Scientific<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://dbpedia.org/resource/Boston_Scientific</p>
+  <dl class="description">
+   <dt>
+    is same as
+   </dt>
+   <dd>
+    <a href="#MAN-006" title="http://www.example.org/medicalOntology#MAN-006">Manufacturer 006 - Boston Scientific Corporation</a> <sup class="type-ni" title="named individual">ni</sup>
+   </dd>
+   <dt>
+    has facts
+   </dt>
+   <dd>
+    <a href="http://www.w3.org/2002/07/owl#sameAs" target="_blank" title="http://www.w3.org/2002/07/owl#sameAs">same As</a> <sup class="type-ep" title="external property">ep</sup> <a href="#MAN-006" title="http://www.example.org/medicalOntology#MAN-006">Manufacturer 006 - Boston Scientific Corporation</a> <sup class="type-ni" title="named individual">ni</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="FSCA-001">
+  <h3>CorrectiveAction 001 - Safety alert for HeartMate thrombosis risk<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.example.org/medicalOntology#FSCA-001</p>
+  <dl class="description">
+   <dt>
+    belongs to
+   </dt>
+   <dd>
+    <a href="#CorrectiveAction" title="http://www.example.org/medicalOntology#CorrectiveAction">Corrective Action</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    has facts
+   </dt>
+   <dd>
+    <a href="#derivedFrom" title="http://www.example.org/medicalOntology#derivedFrom">derived from</a> <sup class="type-op" title="object property">op</sup> <a href="#INC-001" title="http://www.example.org/medicalOntology#INC-001">Incident 001 - Serious patient injury - embolic stroke</a> <sup class="type-ni" title="named individual">ni</sup>
+   </dd>
+   <dd>
+    <a href="#actionType" title="http://www.example.org/medicalOntology#actionType">action type</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"SafetyAlert"</span>
+   </dd>
+   <dd>
+    <a href="#correctiveActionDescription" title="http://www.example.org/medicalOntology#correctiveActionDescription">corrective action description</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"Safety alert issued to all implanting centres regarding anticoagulation protocol update for HeartMate 3 to reduce device thrombosis risk. INR target range revised to 2.0–3.0."</span>
+   </dd>
+   <dd>
+    <a href="#countriesAffected" title="http://www.example.org/medicalOntology#countriesAffected">countries affected</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"EU-wide"</span>
+   </dd>
+   <dd>
+    <a href="#devicesAffected" title="http://www.example.org/medicalOntology#devicesAffected">devices affected</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"850"</span>
+   </dd>
+   <dd>
+    <a href="#fscaId" title="http://www.example.org/medicalOntology#fscaId">fsca id</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"FSCA-001"</span>
+   </dd>
+   <dd>
+    <a href="#scope" title="http://www.example.org/medicalOntology#scope">scope</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"All HeartMate 3 LVAD units implanted since 2020"</span>
+   </dd>
+   <dd>
+    <a href="#status" title="http://www.example.org/medicalOntology#status">status</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"Open"</span>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="FSCA-002">
+  <h3>CorrectiveAction 002 - Recall of Micra AV devices<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.example.org/medicalOntology#FSCA-002</p>
+  <dl class="description">
+   <dt>
+    belongs to
+   </dt>
+   <dd>
+    <a href="#CorrectiveAction" title="http://www.example.org/medicalOntology#CorrectiveAction">Corrective Action</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    has facts
+   </dt>
+   <dd>
+    <a href="#derivedFrom" title="http://www.example.org/medicalOntology#derivedFrom">derived from</a> <sup class="type-op" title="object property">op</sup> <a href="#INC-002" title="http://www.example.org/medicalOntology#INC-002">Incident 002 - Device malfunction - premature battery depletion</a> <sup class="type-ni" title="named individual">ni</sup>
+   </dd>
+   <dd>
+    <a href="#actionType" title="http://www.example.org/medicalOntology#actionType">action type</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"Recall"</span>
+   </dd>
+   <dd>
+    <a href="#correctiveActionDescription" title="http://www.example.org/medicalOntology#correctiveActionDescription">corrective action description</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"Voluntary recall of affected Micra AV lots due to premature battery depletion. Replacement units provided. 97% of affected devices successfully replaced."</span>
+   </dd>
+   <dd>
+    <a href="#countriesAffected" title="http://www.example.org/medicalOntology#countriesAffected">countries affected</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"EU-wide + UK"</span>
+   </dd>
+   <dd>
+    <a href="#devicesAffected" title="http://www.example.org/medicalOntology#devicesAffected">devices affected</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"1240"</span>
+   </dd>
+   <dd>
+    <a href="#fscaId" title="http://www.example.org/medicalOntology#fscaId">fsca id</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"FSCA-002"</span>
+   </dd>
+   <dd>
+    <a href="#scope" title="http://www.example.org/medicalOntology#scope">scope</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"Micra AV lots manufactured between 2022-09 and 2023-03"</span>
+   </dd>
+   <dd>
+    <a href="#status" title="http://www.example.org/medicalOntology#status">status</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"Closed"</span>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="FSCA-003">
+  <h3>CorrectiveAction 003 - Portico valve deployment improvement<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.example.org/medicalOntology#FSCA-003</p>
+  <dl class="description">
+   <dt>
+    belongs to
+   </dt>
+   <dd>
+    <a href="#CorrectiveAction" title="http://www.example.org/medicalOntology#CorrectiveAction">Corrective Action</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    has facts
+   </dt>
+   <dd>
+    <a href="#derivedFrom" title="http://www.example.org/medicalOntology#derivedFrom">derived from</a> <sup class="type-op" title="object property">op</sup> <a href="#INC-003" title="http://www.example.org/medicalOntology#INC-003">Incident 003 - Surgical intervention required - valve re-anchoring</a> <sup class="type-ni" title="named individual">ni</sup>
+   </dd>
+   <dd>
+    <a href="#actionType" title="http://www.example.org/medicalOntology#actionType">action type</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"InSituCorrection"</span>
+   </dd>
+   <dd>
+    <a href="#correctiveActionDescription" title="http://www.example.org/medicalOntology#correctiveActionDescription">corrective action description</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"Enhanced deployment training and updated IFU for Portico valve implantation technique. New implantation checklist mandatory for all TAVI centres."</span>
+   </dd>
+   <dd>
+    <a href="#countriesAffected" title="http://www.example.org/medicalOntology#countriesAffected">countries affected</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"EU-wide"</span>
+   </dd>
+   <dd>
+    <a href="#devicesAffected" title="http://www.example.org/medicalOntology#devicesAffected">devices affected</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"320"</span>
+   </dd>
+   <dd>
+    <a href="#fscaId" title="http://www.example.org/medicalOntology#fscaId">fsca id</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"FSCA-003"</span>
+   </dd>
+   <dd>
+    <a href="#scope" title="http://www.example.org/medicalOntology#scope">scope</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"Portico THV sizes 23mm and 25mm from lots before 2023-11"</span>
+   </dd>
+   <dd>
+    <a href="#status" title="http://www.example.org/medicalOntology#status">status</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"Closed"</span>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="FSCA-004">
+  <h3>CorrectiveAction 004 - Safety communication for ACUITY X4 lead<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.example.org/medicalOntology#FSCA-004</p>
+  <dl class="description">
+   <dt>
+    belongs to
+   </dt>
+   <dd>
+    <a href="#CorrectiveAction" title="http://www.example.org/medicalOntology#CorrectiveAction">Corrective Action</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    has facts
+   </dt>
+   <dd>
+    <a href="#derivedFrom" title="http://www.example.org/medicalOntology#derivedFrom">derived from</a> <sup class="type-op" title="object property">op</sup> <a href="#INC-005" title="http://www.example.org/medicalOntology#INC-005">Incident 005 - Surgical intervention required - lead extraction</a> <sup class="type-ni" title="named individual">ni</sup>
+   </dd>
+   <dd>
+    <a href="#actionType" title="http://www.example.org/medicalOntology#actionType">action type</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"SafetyAlert"</span>
+   </dd>
+   <dd>
+    <a href="#correctiveActionDescription" title="http://www.example.org/medicalOntology#correctiveActionDescription">corrective action description</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"Safety communication to implanting cardiologists regarding optimal fixation technique for ACUITY X4 lead. Enhanced fluoroscopy verification protocol at implantation."</span>
+   </dd>
+   <dd>
+    <a href="#countriesAffected" title="http://www.example.org/medicalOntology#countriesAffected">countries affected</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"EU-wide"</span>
+   </dd>
+   <dd>
+    <a href="#devicesAffected" title="http://www.example.org/medicalOntology#devicesAffected">devices affected</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"2100"</span>
+   </dd>
+   <dd>
+    <a href="#fscaId" title="http://www.example.org/medicalOntology#fscaId">fsca id</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"FSCA-004"</span>
+   </dd>
+   <dd>
+    <a href="#scope" title="http://www.example.org/medicalOntology#scope">scope</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"All ACUITY X4 quadripolar LV leads"</span>
+   </dd>
+   <dd>
+    <a href="#status" title="http://www.example.org/medicalOntology#status">status</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"Open"</span>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="DEV-001">
+  <h3>Device 001 - HeartMate 3 LVAD<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.example.org/medicalOntology#DEV-001</p>
+  <dl class="description">
+   <dt>
+    belongs to
+   </dt>
+   <dd>
+    <a href="#ImplantableActiveDevice" title="http://www.example.org/medicalOntology#ImplantableActiveDevice">Implantable Active Device</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    has facts
+   </dt>
+   <dd>
+    <a href="#hasManufacturer" title="http://www.example.org/medicalOntology#hasManufacturer">has manufacturer</a> <sup class="type-op" title="object property">op</sup> <a href="#MAN-001" title="http://www.example.org/medicalOntology#MAN-001">Manufacturer 001 - Medtronic plc</a> <sup class="type-ni" title="named individual">ni</sup>
+   </dd>
+   <dd>
+    <a href="#deviceId" title="http://www.example.org/medicalOntology#deviceId">device id</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"DEV-001"</span>
+   </dd>
+   <dd>
+    <a href="#deviceName" title="http://www.example.org/medicalOntology#deviceName">device name</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"HeartMate 3 LVAD"</span>
+   </dd>
+   <dd>
+    <a href="#deviceType" title="http://www.example.org/medicalOntology#deviceType">device type</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"ImplantableActiveDevice"</span>
+   </dd>
+   <dd>
+    <a href="#intendedPurpose" title="http://www.example.org/medicalOntology#intendedPurpose">intended purpose</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"Ventricular assist device for end-stage heart failure"</span>
+   </dd>
+   <dd>
+    <a href="#riskClass" title="http://www.example.org/medicalOntology#riskClass">risk class</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"ClassIII"</span>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="DEV-002">
+  <h3>Device 002 - Micra AV Transcatheter Pacing System<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.example.org/medicalOntology#DEV-002</p>
+  <dl class="description">
+   <dt>
+    belongs to
+   </dt>
+   <dd>
+    <a href="#ActiveImplant" title="http://www.example.org/medicalOntology#ActiveImplant">Active Implant</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    has facts
+   </dt>
+   <dd>
+    <a href="#hasManufacturer" title="http://www.example.org/medicalOntology#hasManufacturer">has manufacturer</a> <sup class="type-op" title="object property">op</sup> <a href="#MAN-001" title="http://www.example.org/medicalOntology#MAN-001">Manufacturer 001 - Medtronic plc</a> <sup class="type-ni" title="named individual">ni</sup>
+   </dd>
+   <dd>
+    <a href="#deviceId" title="http://www.example.org/medicalOntology#deviceId">device id</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"DEV-002"</span>
+   </dd>
+   <dd>
+    <a href="#deviceName" title="http://www.example.org/medicalOntology#deviceName">device name</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"Micra AV Transcatheter Pacing System"</span>
+   </dd>
+   <dd>
+    <a href="#deviceType" title="http://www.example.org/medicalOntology#deviceType">device type</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"ActiveImplant"</span>
+   </dd>
+   <dd>
+    <a href="#intendedPurpose" title="http://www.example.org/medicalOntology#intendedPurpose">intended purpose</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"Leadless cardiac pacemaker for atrioventricular synchrony"</span>
+   </dd>
+   <dd>
+    <a href="#riskClass" title="http://www.example.org/medicalOntology#riskClass">risk class</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"ClassIII"</span>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="DEV-003">
+  <h3>Device 003 - Portico Transcatheter Heart Valve<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.example.org/medicalOntology#DEV-003</p>
+  <dl class="description">
+   <dt>
+    belongs to
+   </dt>
+   <dd>
+    <a href="#ImplantableDevice" title="http://www.example.org/medicalOntology#ImplantableDevice">Implantable Device</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    has facts
+   </dt>
+   <dd>
+    <a href="#hasManufacturer" title="http://www.example.org/medicalOntology#hasManufacturer">has manufacturer</a> <sup class="type-op" title="object property">op</sup> <a href="#MAN-002" title="http://www.example.org/medicalOntology#MAN-002">Manufacturer 002 - Abbott Medical Devices</a> <sup class="type-ni" title="named individual">ni</sup>
+   </dd>
+   <dd>
+    <a href="#deviceId" title="http://www.example.org/medicalOntology#deviceId">device id</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"DEV-003"</span>
+   </dd>
+   <dd>
+    <a href="#deviceName" title="http://www.example.org/medicalOntology#deviceName">device name</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"Portico Transcatheter Heart Valve"</span>
+   </dd>
+   <dd>
+    <a href="#deviceType" title="http://www.example.org/medicalOntology#deviceType">device type</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"ImplantableDevice"</span>
+   </dd>
+   <dd>
+    <a href="#intendedPurpose" title="http://www.example.org/medicalOntology#intendedPurpose">intended purpose</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"Transcatheter aortic valve replacement (TAVI)"</span>
+   </dd>
+   <dd>
+    <a href="#riskClass" title="http://www.example.org/medicalOntology#riskClass">risk class</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"ClassIII"</span>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="DEV-004">
+  <h3>Device 004 - SYNERGY Stent System<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.example.org/medicalOntology#DEV-004</p>
+  <dl class="description">
+   <dt>
+    belongs to
+   </dt>
+   <dd>
+    <a href="#ImplantableActiveDevice" title="http://www.example.org/medicalOntology#ImplantableActiveDevice">Implantable Active Device</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    has facts
+   </dt>
+   <dd>
+    <a href="#hasManufacturer" title="http://www.example.org/medicalOntology#hasManufacturer">has manufacturer</a> <sup class="type-op" title="object property">op</sup> <a href="#MAN-006" title="http://www.example.org/medicalOntology#MAN-006">Manufacturer 006 - Boston Scientific Corporation</a> <sup class="type-ni" title="named individual">ni</sup>
+   </dd>
+   <dd>
+    <a href="#deviceId" title="http://www.example.org/medicalOntology#deviceId">device id</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"DEV-004"</span>
+   </dd>
+   <dd>
+    <a href="#deviceName" title="http://www.example.org/medicalOntology#deviceName">device name</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"SYNERGY Stent System"</span>
+   </dd>
+   <dd>
+    <a href="#deviceType" title="http://www.example.org/medicalOntology#deviceType">device type</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"ImplantableActiveDevice"</span>
+   </dd>
+   <dd>
+    <a href="#intendedPurpose" title="http://www.example.org/medicalOntology#intendedPurpose">intended purpose</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"Drug-eluting coronary stent"</span>
+   </dd>
+   <dd>
+    <a href="#riskClass" title="http://www.example.org/medicalOntology#riskClass">risk class</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"ClassIIb"</span>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="DEV-005">
+  <h3>Device 005 - ACUITY X4 Quadripolar LV Lead<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.example.org/medicalOntology#DEV-005</p>
+  <dl class="description">
+   <dt>
+    belongs to
+   </dt>
+   <dd>
+    <a href="#ActiveImplant" title="http://www.example.org/medicalOntology#ActiveImplant">Active Implant</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    has facts
+   </dt>
+   <dd>
+    <a href="#hasManufacturer" title="http://www.example.org/medicalOntology#hasManufacturer">has manufacturer</a> <sup class="type-op" title="object property">op</sup> <a href="#MAN-006" title="http://www.example.org/medicalOntology#MAN-006">Manufacturer 006 - Boston Scientific Corporation</a> <sup class="type-ni" title="named individual">ni</sup>
+   </dd>
+   <dd>
+    <a href="#deviceId" title="http://www.example.org/medicalOntology#deviceId">device id</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"DEV-005"</span>
+   </dd>
+   <dd>
+    <a href="#deviceName" title="http://www.example.org/medicalOntology#deviceName">device name</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"ACUITY X4 Quadripolar LV Lead"</span>
+   </dd>
+   <dd>
+    <a href="#deviceType" title="http://www.example.org/medicalOntology#deviceType">device type</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"ActiveImplant"</span>
+   </dd>
+   <dd>
+    <a href="#intendedPurpose" title="http://www.example.org/medicalOntology#intendedPurpose">intended purpose</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"Cardiac resynchronization therapy lead"</span>
+   </dd>
+   <dd>
+    <a href="#riskClass" title="http://www.example.org/medicalOntology#riskClass">risk class</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"ClassIII"</span>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="INC-001">
+  <h3>Incident 001 - Serious patient injury - embolic stroke<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.example.org/medicalOntology#INC-001</p>
+  <dl class="description">
+   <dt>
+    belongs to
+   </dt>
+   <dd>
+    <a href="#SeriousIncident" title="http://www.example.org/medicalOntology#SeriousIncident">Serious Incident</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    has facts
+   </dt>
+   <dd>
+    <a href="#affectsDevice" title="http://www.example.org/medicalOntology#affectsDevice">affects device</a> <sup class="type-op" title="object property">op</sup> <a href="#DEV-001" title="http://www.example.org/medicalOntology#DEV-001">Device 001 - HeartMate 3 LVAD</a> <sup class="type-ni" title="named individual">ni</sup>
+   </dd>
+   <dd>
+    <a href="#hasRisk" title="http://www.example.org/medicalOntology#hasRisk">has risk</a> <sup class="type-op" title="object property">op</sup> <a href="#RSK-003" title="http://www.example.org/medicalOntology#RSK-003">Risk 003 - Thrombosis - device-related</a> <sup class="type-ni" title="named individual">ni</sup>
+   </dd>
+   <dd>
+    <a href="#reportedBy" title="http://www.example.org/medicalOntology#reportedBy">reported by</a> <sup class="type-op" title="object property">op</sup> <a href="#MAN-001" title="http://www.example.org/medicalOntology#MAN-001">Manufacturer 001 - Medtronic plc</a> <sup class="type-ni" title="named individual">ni</sup>
+   </dd>
+   <dd>
+    <a href="#correctiveActionTaken" title="http://www.example.org/medicalOntology#correctiveActionTaken">corrective action taken</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"true"^^<a href="http://www.w3.org/2001/XMLSchema#boolean" target="_blank" title="http://www.w3.org/2001/XMLSchema#boolean">boolean</a> </span>
+   </dd>
+   <dd>
+    <a href="#countryReported" title="http://www.example.org/medicalOntology#countryReported">country reported</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"Germany"</span>
+   </dd>
+   <dd>
+    <a href="#incidentDescription" title="http://www.example.org/medicalOntology#incidentDescription">incident description</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"Patient implanted with HeartMate 3 LVAD developed ischemic stroke 6 months post-implant. Device thrombus confirmed by echocardiography."</span>
+   </dd>
+   <dd>
+    <a href="#incidentId" title="http://www.example.org/medicalOntology#incidentId">incident id</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"INC-001"</span>
+   </dd>
+   <dd>
+    <a href="#incidentType" title="http://www.example.org/medicalOntology#incidentType">incident type</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"SeriousIncident"</span>
+   </dd>
+   <dd>
+    <a href="#outcome" title="http://www.example.org/medicalOntology#outcome">outcome</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"Serious patient injury - embolic stroke"</span>
+   </dd>
+   <dd>
+    <a href="#patientAge" title="http://www.example.org/medicalOntology#patientAge">patient age</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"58"^^<a href="http://www.w3.org/2001/XMLSchema#integer" target="_blank" title="http://www.w3.org/2001/XMLSchema#integer">integer</a> </span>
+   </dd>
+   <dd>
+    <a href="#patientSex" title="http://www.example.org/medicalOntology#patientSex">patient sex</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"Male"</span>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="INC-002">
+  <h3>Incident 002 - Device malfunction - premature battery depletion<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.example.org/medicalOntology#INC-002</p>
+  <dl class="description">
+   <dt>
+    belongs to
+   </dt>
+   <dd>
+    <a href="#SeriousIncident" title="http://www.example.org/medicalOntology#SeriousIncident">Serious Incident</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    has facts
+   </dt>
+   <dd>
+    <a href="#affectsDevice" title="http://www.example.org/medicalOntology#affectsDevice">affects device</a> <sup class="type-op" title="object property">op</sup> <a href="#DEV-002" title="http://www.example.org/medicalOntology#DEV-002">Device 002 - Micra AV Transcatheter Pacing System</a> <sup class="type-ni" title="named individual">ni</sup>
+   </dd>
+   <dd>
+    <a href="#hasRisk" title="http://www.example.org/medicalOntology#hasRisk">has risk</a> <sup class="type-op" title="object property">op</sup> <a href="#RSK-009" title="http://www.example.org/medicalOntology#RSK-009">Risk 009 - Battery depletion - premature</a> <sup class="type-ni" title="named individual">ni</sup>
+   </dd>
+   <dd>
+    <a href="#reportedBy" title="http://www.example.org/medicalOntology#reportedBy">reported by</a> <sup class="type-op" title="object property">op</sup> <a href="#MAN-001" title="http://www.example.org/medicalOntology#MAN-001">Manufacturer 001 - Medtronic plc</a> <sup class="type-ni" title="named individual">ni</sup>
+   </dd>
+   <dd>
+    <a href="#correctiveActionTaken" title="http://www.example.org/medicalOntology#correctiveActionTaken">corrective action taken</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"true"^^<a href="http://www.w3.org/2001/XMLSchema#boolean" target="_blank" title="http://www.w3.org/2001/XMLSchema#boolean">boolean</a> </span>
+   </dd>
+   <dd>
+    <a href="#countryReported" title="http://www.example.org/medicalOntology#countryReported">country reported</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"France"</span>
+   </dd>
+   <dd>
+    <a href="#incidentDescription" title="http://www.example.org/medicalOntology#incidentDescription">incident description</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"Micra AV pacemaker reached elective replacement indicator 14 months earlier than expected longevity specification."</span>
+   </dd>
+   <dd>
+    <a href="#incidentId" title="http://www.example.org/medicalOntology#incidentId">incident id</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"INC-002"</span>
+   </dd>
+   <dd>
+    <a href="#incidentType" title="http://www.example.org/medicalOntology#incidentType">incident type</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"SeriousIncident"</span>
+   </dd>
+   <dd>
+    <a href="#outcome" title="http://www.example.org/medicalOntology#outcome">outcome</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"Device malfunction - premature battery depletion"</span>
+   </dd>
+   <dd>
+    <a href="#patientAge" title="http://www.example.org/medicalOntology#patientAge">patient age</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"72"^^<a href="http://www.w3.org/2001/XMLSchema#integer" target="_blank" title="http://www.w3.org/2001/XMLSchema#integer">integer</a> </span>
+   </dd>
+   <dd>
+    <a href="#patientSex" title="http://www.example.org/medicalOntology#patientSex">patient sex</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"Female"</span>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="INC-003">
+  <h3>Incident 003 - Surgical intervention required - valve re-anchoring<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.example.org/medicalOntology#INC-003</p>
+  <dl class="description">
+   <dt>
+    belongs to
+   </dt>
+   <dd>
+    <a href="#SeriousIncident" title="http://www.example.org/medicalOntology#SeriousIncident">Serious Incident</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    has facts
+   </dt>
+   <dd>
+    <a href="#affectsDevice" title="http://www.example.org/medicalOntology#affectsDevice">affects device</a> <sup class="type-op" title="object property">op</sup> <a href="#DEV-003" title="http://www.example.org/medicalOntology#DEV-003">Device 003 - Portico Transcatheter Heart Valve</a> <sup class="type-ni" title="named individual">ni</sup>
+   </dd>
+   <dd>
+    <a href="#hasRisk" title="http://www.example.org/medicalOntology#hasRisk">has risk</a> <sup class="type-op" title="object property">op</sup> <a href="#RSK-005" title="http://www.example.org/medicalOntology#RSK-005">Risk 005 - Device migration - implant</a> <sup class="type-ni" title="named individual">ni</sup>
+   </dd>
+   <dd>
+    <a href="#reportedBy" title="http://www.example.org/medicalOntology#reportedBy">reported by</a> <sup class="type-op" title="object property">op</sup> <a href="#MAN-002" title="http://www.example.org/medicalOntology#MAN-002">Manufacturer 002 - Abbott Medical Devices</a> <sup class="type-ni" title="named individual">ni</sup>
+   </dd>
+   <dd>
+    <a href="#correctiveActionTaken" title="http://www.example.org/medicalOntology#correctiveActionTaken">corrective action taken</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"true"^^<a href="http://www.w3.org/2001/XMLSchema#boolean" target="_blank" title="http://www.w3.org/2001/XMLSchema#boolean">boolean</a> </span>
+   </dd>
+   <dd>
+    <a href="#countryReported" title="http://www.example.org/medicalOntology#countryReported">country reported</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"Italy"</span>
+   </dd>
+   <dd>
+    <a href="#incidentDescription" title="http://www.example.org/medicalOntology#incidentDescription">incident description</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"Portico valve showed paravalvular leak grade III due to partial migration 2 weeks post-TAVI procedure."</span>
+   </dd>
+   <dd>
+    <a href="#incidentId" title="http://www.example.org/medicalOntology#incidentId">incident id</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"INC-003"</span>
+   </dd>
+   <dd>
+    <a href="#incidentType" title="http://www.example.org/medicalOntology#incidentType">incident type</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"SeriousIncident"</span>
+   </dd>
+   <dd>
+    <a href="#outcome" title="http://www.example.org/medicalOntology#outcome">outcome</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"Surgical intervention required - valve re-anchoring"</span>
+   </dd>
+   <dd>
+    <a href="#patientAge" title="http://www.example.org/medicalOntology#patientAge">patient age</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"67"^^<a href="http://www.w3.org/2001/XMLSchema#integer" target="_blank" title="http://www.w3.org/2001/XMLSchema#integer">integer</a> </span>
+   </dd>
+   <dd>
+    <a href="#patientSex" title="http://www.example.org/medicalOntology#patientSex">patient sex</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"Male"</span>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="INC-004">
+  <h3>Incident 004 - Device malfunction - stent fracture<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.example.org/medicalOntology#INC-004</p>
+  <dl class="description">
+   <dt>
+    belongs to
+   </dt>
+   <dd>
+    <a href="#SeriousIncident" title="http://www.example.org/medicalOntology#SeriousIncident">Serious Incident</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    has facts
+   </dt>
+   <dd>
+    <a href="#affectsDevice" title="http://www.example.org/medicalOntology#affectsDevice">affects device</a> <sup class="type-op" title="object property">op</sup> <a href="#DEV-004" title="http://www.example.org/medicalOntology#DEV-004">Device 004 - SYNERGY Stent System</a> <sup class="type-ni" title="named individual">ni</sup>
+   </dd>
+   <dd>
+    <a href="#hasRisk" title="http://www.example.org/medicalOntology#hasRisk">has risk</a> <sup class="type-op" title="object property">op</sup> <a href="#RSK-002" title="http://www.example.org/medicalOntology#RSK-002">Risk 001 - Device failure - mechanical</a> <sup class="type-ni" title="named individual">ni</sup>
+   </dd>
+   <dd>
+    <a href="#reportedBy" title="http://www.example.org/medicalOntology#reportedBy">reported by</a> <sup class="type-op" title="object property">op</sup> <a href="#MAN-006" title="http://www.example.org/medicalOntology#MAN-006">Manufacturer 006 - Boston Scientific Corporation</a> <sup class="type-ni" title="named individual">ni</sup>
+   </dd>
+   <dd>
+    <a href="#correctiveActionTaken" title="http://www.example.org/medicalOntology#correctiveActionTaken">corrective action taken</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"false"^^<a href="http://www.w3.org/2001/XMLSchema#boolean" target="_blank" title="http://www.w3.org/2001/XMLSchema#boolean">boolean</a> </span>
+   </dd>
+   <dd>
+    <a href="#countryReported" title="http://www.example.org/medicalOntology#countryReported">country reported</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"Spain"</span>
+   </dd>
+   <dd>
+    <a href="#incidentDescription" title="http://www.example.org/medicalOntology#incidentDescription">incident description</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"SYNERGY stent fracture detected on angiography 18 months post-implant causing in-stent restenosis."</span>
+   </dd>
+   <dd>
+    <a href="#incidentId" title="http://www.example.org/medicalOntology#incidentId">incident id</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"INC-004"</span>
+   </dd>
+   <dd>
+    <a href="#incidentType" title="http://www.example.org/medicalOntology#incidentType">incident type</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"SeriousIncident"</span>
+   </dd>
+   <dd>
+    <a href="#outcome" title="http://www.example.org/medicalOntology#outcome">outcome</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"Device malfunction - stent fracture"</span>
+   </dd>
+   <dd>
+    <a href="#patientAge" title="http://www.example.org/medicalOntology#patientAge">patient age</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"55"^^<a href="http://www.w3.org/2001/XMLSchema#integer" target="_blank" title="http://www.w3.org/2001/XMLSchema#integer">integer</a> </span>
+   </dd>
+   <dd>
+    <a href="#patientSex" title="http://www.example.org/medicalOntology#patientSex">patient sex</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"Female"</span>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="INC-005">
+  <h3>Incident 005 - Surgical intervention required - lead extraction<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.example.org/medicalOntology#INC-005</p>
+  <dl class="description">
+   <dt>
+    belongs to
+   </dt>
+   <dd>
+    <a href="#SeriousIncident" title="http://www.example.org/medicalOntology#SeriousIncident">Serious Incident</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    has facts
+   </dt>
+   <dd>
+    <a href="#affectsDevice" title="http://www.example.org/medicalOntology#affectsDevice">affects device</a> <sup class="type-op" title="object property">op</sup> <a href="#DEV-005" title="http://www.example.org/medicalOntology#DEV-005">Device 005 - ACUITY X4 Quadripolar LV Lead</a> <sup class="type-ni" title="named individual">ni</sup>
+   </dd>
+   <dd>
+    <a href="#hasRisk" title="http://www.example.org/medicalOntology#hasRisk">has risk</a> <sup class="type-op" title="object property">op</sup> <a href="#RSK-006" title="http://www.example.org/medicalOntology#RSK-006">Risk 006 - Lead dislodgement</a> <sup class="type-ni" title="named individual">ni</sup>
+   </dd>
+   <dd>
+    <a href="#reportedBy" title="http://www.example.org/medicalOntology#reportedBy">reported by</a> <sup class="type-op" title="object property">op</sup> <a href="#MAN-006" title="http://www.example.org/medicalOntology#MAN-006">Manufacturer 006 - Boston Scientific Corporation</a> <sup class="type-ni" title="named individual">ni</sup>
+   </dd>
+   <dd>
+    <a href="#correctiveActionTaken" title="http://www.example.org/medicalOntology#correctiveActionTaken">corrective action taken</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"true"^^<a href="http://www.w3.org/2001/XMLSchema#boolean" target="_blank" title="http://www.w3.org/2001/XMLSchema#boolean">boolean</a> </span>
+   </dd>
+   <dd>
+    <a href="#countryReported" title="http://www.example.org/medicalOntology#countryReported">country reported</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"Netherlands"</span>
+   </dd>
+   <dd>
+    <a href="#incidentDescription" title="http://www.example.org/medicalOntology#incidentDescription">incident description</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"ACUITY X4 lead dislodgement to right ventricle requiring fluoroscopy-guided repositioning."</span>
+   </dd>
+   <dd>
+    <a href="#incidentId" title="http://www.example.org/medicalOntology#incidentId">incident id</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"INC-005"</span>
+   </dd>
+   <dd>
+    <a href="#incidentType" title="http://www.example.org/medicalOntology#incidentType">incident type</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"SeriousIncident"</span>
+   </dd>
+   <dd>
+    <a href="#outcome" title="http://www.example.org/medicalOntology#outcome">outcome</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"Surgical intervention required - lead extraction"</span>
+   </dd>
+   <dd>
+    <a href="#patientAge" title="http://www.example.org/medicalOntology#patientAge">patient age</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"63"^^<a href="http://www.w3.org/2001/XMLSchema#integer" target="_blank" title="http://www.w3.org/2001/XMLSchema#integer">integer</a> </span>
+   </dd>
+   <dd>
+    <a href="#patientSex" title="http://www.example.org/medicalOntology#patientSex">patient sex</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"Male"</span>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="MAN-001">
+  <h3>Manufacturer 001 - Medtronic plc<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.example.org/medicalOntology#MAN-001</p>
+  <dl class="description">
+   <dt>
+    belongs to
+   </dt>
+   <dd>
+    <a href="#Manufacturer" title="http://www.example.org/medicalOntology#Manufacturer">Manufacturer</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is same as
+   </dt>
+   <dd>
+    <a href="#http://dbpedia.org/resource/Medtronic" title="http://dbpedia.org/resource/Medtronic">Medtronic</a> <sup class="type-ni" title="named individual">ni</sup>
+   </dd>
+   <dt>
+    has facts
+   </dt>
+   <dd>
+    <a href="#manufacturerId" title="http://www.example.org/medicalOntology#manufacturerId">manufacturer id</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"MAN-001"</span>
+   </dd>
+   <dd>
+    <a href="#manufacturerName" title="http://www.example.org/medicalOntology#manufacturerName">name</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"Medtronic plc"</span>
+   </dd>
+   <dd>
+    <a href="#country" title="http://www.example.org/medicalOntology#country">country</a> <sup class="type-dp" title="data property">dp</sup> <a href="http://dbpedia.org/resource/Ireland" target="_blank" title="http://dbpedia.org/resource/Ireland">Ireland</a> <sup class="type-ep" title="external property">ep</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="MAN-002">
+  <h3>Manufacturer 002 - Abbott Medical Devices<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.example.org/medicalOntology#MAN-002</p>
+  <dl class="description">
+   <dt>
+    belongs to
+   </dt>
+   <dd>
+    <a href="#Manufacturer" title="http://www.example.org/medicalOntology#Manufacturer">Manufacturer</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is same as
+   </dt>
+   <dd>
+    <a href="#http://dbpedia.org/resource/Abbott_Laboratories" title="http://dbpedia.org/resource/Abbott_Laboratories">Abbott Laboratories</a> <sup class="type-ni" title="named individual">ni</sup>
+   </dd>
+   <dt>
+    has facts
+   </dt>
+   <dd>
+    <a href="#manufacturerId" title="http://www.example.org/medicalOntology#manufacturerId">manufacturer id</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"MAN-002"</span>
+   </dd>
+   <dd>
+    <a href="#manufacturerName" title="http://www.example.org/medicalOntology#manufacturerName">name</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"Abbott Medical Devices"</span>
+   </dd>
+   <dd>
+    <a href="#country" title="http://www.example.org/medicalOntology#country">country</a> <sup class="type-dp" title="data property">dp</sup> <a href="http://dbpedia.org/resource/Germany" target="_blank" title="http://dbpedia.org/resource/Germany">Germany</a> <sup class="type-ep" title="external property">ep</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="MAN-006">
+  <h3>Manufacturer 006 - Boston Scientific Corporation<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.example.org/medicalOntology#MAN-006</p>
+  <dl class="description">
+   <dt>
+    belongs to
+   </dt>
+   <dd>
+    <a href="#Manufacturer" title="http://www.example.org/medicalOntology#Manufacturer">Manufacturer</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is same as
+   </dt>
+   <dd>
+    <a href="#http://dbpedia.org/resource/Boston_Scientific" title="http://dbpedia.org/resource/Boston_Scientific">Boston Scientific</a> <sup class="type-ni" title="named individual">ni</sup>
+   </dd>
+   <dt>
+    has facts
+   </dt>
+   <dd>
+    <a href="#manufacturerId" title="http://www.example.org/medicalOntology#manufacturerId">manufacturer id</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"MAN-006"</span>
+   </dd>
+   <dd>
+    <a href="#manufacturerName" title="http://www.example.org/medicalOntology#manufacturerName">name</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"Boston Scientific Corporation"</span>
+   </dd>
+   <dd>
+    <a href="#country" title="http://www.example.org/medicalOntology#country">country</a> <sup class="type-dp" title="data property">dp</sup> <a href="http://dbpedia.org/resource/Ireland" target="_blank" title="http://dbpedia.org/resource/Ireland">Ireland</a> <sup class="type-ep" title="external property">ep</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="http://dbpedia.org/resource/Medtronic">
+  <h3>Medtronic<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://dbpedia.org/resource/Medtronic</p>
+  <dl class="description">
+   <dt>
+    is same as
+   </dt>
+   <dd>
+    <a href="#MAN-001" title="http://www.example.org/medicalOntology#MAN-001">Manufacturer 001 - Medtronic plc</a> <sup class="type-ni" title="named individual">ni</sup>
+   </dd>
+   <dt>
+    has facts
+   </dt>
+   <dd>
+    <a href="http://www.w3.org/2002/07/owl#sameAs" target="_blank" title="http://www.w3.org/2002/07/owl#sameAs">same As</a> <sup class="type-ep" title="external property">ep</sup> <a href="#MAN-001" title="http://www.example.org/medicalOntology#MAN-001">Manufacturer 001 - Medtronic plc</a> <sup class="type-ni" title="named individual">ni</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="RSK-002">
+  <h3>Risk 001 - Device failure - mechanical<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.example.org/medicalOntology#RSK-002</p>
+  <dl class="description">
+   <dt>
+    belongs to
+   </dt>
+   <dd>
+    <a href="#MalfunctionRisk" title="http://www.example.org/medicalOntology#MalfunctionRisk">Malfunction Risk</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    has facts
+   </dt>
+   <dd>
+    <a href="#affectedDeviceType" title="http://www.example.org/medicalOntology#affectedDeviceType">affected device type</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"ImplantableDevice"</span>
+   </dd>
+   <dd>
+    <a href="#riskCategory" title="http://www.example.org/medicalOntology#riskCategory">risk category</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"Device Failure"</span>
+   </dd>
+   <dd>
+    <a href="#riskDescription" title="http://www.example.org/medicalOntology#riskDescription">risk description</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"Structural failure of mechanical components under physiological load"</span>
+   </dd>
+   <dd>
+    <a href="#riskId" title="http://www.example.org/medicalOntology#riskId">risk id</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"RSK-002"</span>
+   </dd>
+   <dd>
+    <a href="#riskName" title="http://www.example.org/medicalOntology#riskName">risk name</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"Device failure - mechanical"</span>
+   </dd>
+   <dd>
+    <a href="#riskType" title="http://www.example.org/medicalOntology#riskType">risk type</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"MalfunctionRisk"</span>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="RSK-003">
+  <h3>Risk 003 - Thrombosis - device-related<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.example.org/medicalOntology#RSK-003</p>
+  <dl class="description">
+   <dt>
+    belongs to
+   </dt>
+   <dd>
+    <a href="#InjuryRisk" title="http://www.example.org/medicalOntology#InjuryRisk">Injury Risk</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    has facts
+   </dt>
+   <dd>
+    <a href="#affectedDeviceType" title="http://www.example.org/medicalOntology#affectedDeviceType">affected device type</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"ImplantableActiveDevice"</span>
+   </dd>
+   <dd>
+    <a href="#riskCategory" title="http://www.example.org/medicalOntology#riskCategory">risk category</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"Patient Harm"</span>
+   </dd>
+   <dd>
+    <a href="#riskDescription" title="http://www.example.org/medicalOntology#riskDescription">risk description</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"Thrombus formation on device surface causing embolic events"</span>
+   </dd>
+   <dd>
+    <a href="#riskId" title="http://www.example.org/medicalOntology#riskId">risk id</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"RSK-003"</span>
+   </dd>
+   <dd>
+    <a href="#riskName" title="http://www.example.org/medicalOntology#riskName">risk name</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"Thrombosis - device-related"</span>
+   </dd>
+   <dd>
+    <a href="#riskType" title="http://www.example.org/medicalOntology#riskType">risk type</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"InjuryRisk"</span>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="RSK-005">
+  <h3>Risk 005 - Device migration - implant<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.example.org/medicalOntology#RSK-005</p>
+  <dl class="description">
+   <dt>
+    belongs to
+   </dt>
+   <dd>
+    <a href="#MalfunctionRisk" title="http://www.example.org/medicalOntology#MalfunctionRisk">Malfunction Risk</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    has facts
+   </dt>
+   <dd>
+    <a href="#affectedDeviceType" title="http://www.example.org/medicalOntology#affectedDeviceType">affected device type</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"ImplantableDevice"</span>
+   </dd>
+   <dd>
+    <a href="#riskCategory" title="http://www.example.org/medicalOntology#riskCategory">risk category</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"Device Performance"</span>
+   </dd>
+   <dd>
+    <a href="#riskDescription" title="http://www.example.org/medicalOntology#riskDescription">risk description</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"Unintended displacement of implant from intended anatomical position"</span>
+   </dd>
+   <dd>
+    <a href="#riskId" title="http://www.example.org/medicalOntology#riskId">risk id</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"RSK-005"</span>
+   </dd>
+   <dd>
+    <a href="#riskName" title="http://www.example.org/medicalOntology#riskName">risk name</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"Device migration - implant"</span>
+   </dd>
+   <dd>
+    <a href="#riskType" title="http://www.example.org/medicalOntology#riskType">risk type</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"MalfunctionRisk"</span>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="RSK-006">
+  <h3>Risk 006 - Lead dislodgement<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.example.org/medicalOntology#RSK-006</p>
+  <dl class="description">
+   <dt>
+    belongs to
+   </dt>
+   <dd>
+    <a href="#MalfunctionRisk" title="http://www.example.org/medicalOntology#MalfunctionRisk">Malfunction Risk</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    has facts
+   </dt>
+   <dd>
+    <a href="#affectedDeviceType" title="http://www.example.org/medicalOntology#affectedDeviceType">affected device type</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"ActiveImplant"</span>
+   </dd>
+   <dd>
+    <a href="#riskCategory" title="http://www.example.org/medicalOntology#riskCategory">risk category</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"Device Performance"</span>
+   </dd>
+   <dd>
+    <a href="#riskDescription" title="http://www.example.org/medicalOntology#riskDescription">risk description</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"Cardiac lead displacement requiring repositioning or replacement"</span>
+   </dd>
+   <dd>
+    <a href="#riskId" title="http://www.example.org/medicalOntology#riskId">risk id</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"RSK-006"</span>
+   </dd>
+   <dd>
+    <a href="#riskName" title="http://www.example.org/medicalOntology#riskName">risk name</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"Lead dislodgement"</span>
+   </dd>
+   <dd>
+    <a href="#riskType" title="http://www.example.org/medicalOntology#riskType">risk type</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"MalfunctionRisk"</span>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="RSK-009">
+  <h3>Risk 009 - Battery depletion - premature<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.example.org/medicalOntology#RSK-009</p>
+  <dl class="description">
+   <dt>
+    belongs to
+   </dt>
+   <dd>
+    <a href="#MalfunctionRisk" title="http://www.example.org/medicalOntology#MalfunctionRisk">Malfunction Risk</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    has facts
+   </dt>
+   <dd>
+    <a href="#affectedDeviceType" title="http://www.example.org/medicalOntology#affectedDeviceType">affected device type</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"ActiveImplant"</span>
+   </dd>
+   <dd>
+    <a href="#riskCategory" title="http://www.example.org/medicalOntology#riskCategory">risk category</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"Device Failure"</span>
+   </dd>
+   <dd>
+    <a href="#riskDescription" title="http://www.example.org/medicalOntology#riskDescription">risk description</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"Battery end-of-life earlier than specified, risking therapy interruption"</span>
+   </dd>
+   <dd>
+    <a href="#riskId" title="http://www.example.org/medicalOntology#riskId">risk id</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"RSK-009"</span>
+   </dd>
+   <dd>
+    <a href="#riskName" title="http://www.example.org/medicalOntology#riskName">risk name</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"Battery depletion - premature"</span>
+   </dd>
+   <dd>
+    <a href="#riskType" title="http://www.example.org/medicalOntology#riskType">risk type</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"MalfunctionRisk"</span>
+   </dd>
+  </dl>
+ </div>
+</div><div id="legend">
+<h2>Legend <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<div   class="entity">
+<sup class="type-c" title="Classes">c</sup>: Classes <br/>
+<sup class="type-op" title="Object Properties">op</sup>: Object Properties <br/>
+<sup class="type-dp" title="Data Properties">dp</sup>: Data Properties <br/>
+<sup class="type-ni" title="Named Individuals">ni</sup>: Named Individuals <br/>
+<sup class="type-ep" title="External Properties">ep</sup>: External Properties
+</div>
+</div>
+</div>
+    
+
+<!--REFERENCES SECTION-->
+  <div id="references">
+<h2 id="ref" class="list">References <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<span class="markdown">
+Add your references here. It is recommended to have them as a list.</span>
+
+</div>
+<div id="acknowledgments">
+<h2 id="ack" class="list">Acknowledgments <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<p>
+The authors would like to thank <a href="http://www.essepuntato.it/">Silvio Peroni</a> for developing <a href="http://www.essepuntato.it/lode">LODE</a>, a Live OWL Documentation Environment, which is used for representing the Cross Referencing Section of this document and <a href="https://w3id.org/people/dgarijo">Daniel Garijo</a> for developing <a href="https://github.com/dgarijo/Widoco">Widoco</a>, the program used to create the template used in this documentation.</p>
+</div>
+
+
+</div>
+</body>
+</html>
