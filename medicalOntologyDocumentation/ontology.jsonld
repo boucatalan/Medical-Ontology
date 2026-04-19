@@ -1,0 +1,1705 @@
+[ {
+  "@id" : "_:genid1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#minCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.example.org/medicalOntology#derivedFrom"
+  } ]
+}, {
+  "@id" : "_:genid11",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
+  "http://www.w3.org/2002/07/owl#members" : [ {
+    "@list" : [ {
+      "@id" : "http://www.example.org/medicalOntology#ActiveDevice"
+    }, {
+      "@id" : "http://www.example.org/medicalOntology#IVDDevice"
+    }, {
+      "@id" : "http://www.example.org/medicalOntology#ImplantableDevice"
+    }, {
+      "@id" : "http://www.example.org/medicalOntology#SelfTestDevice"
+    }, {
+      "@id" : "http://www.example.org/medicalOntology#SingleUseDevice"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid17",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
+  "http://www.w3.org/2002/07/owl#members" : [ {
+    "@list" : [ {
+      "@id" : "http://www.example.org/medicalOntology#ContaminationRisk"
+    }, {
+      "@id" : "http://www.example.org/medicalOntology#CybersecurityRisk"
+    }, {
+      "@id" : "http://www.example.org/medicalOntology#DiagnosticRisk"
+    }, {
+      "@id" : "http://www.example.org/medicalOntology#InfectionRisk"
+    }, {
+      "@id" : "http://www.example.org/medicalOntology#InjuryRisk"
+    }, {
+      "@id" : "http://www.example.org/medicalOntology#InterferenceRisk"
+    }, {
+      "@id" : "http://www.example.org/medicalOntology#MalfunctionRisk"
+    }, {
+      "@id" : "http://www.example.org/medicalOntology#MaterialRisk"
+    }, {
+      "@id" : "http://www.example.org/medicalOntology#RadiationRisk"
+    }, {
+      "@id" : "http://www.example.org/medicalOntology#SoftwareRisk"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid28",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AllDifferent" ],
+  "http://www.w3.org/2002/07/owl#distinctMembers" : [ {
+    "@list" : [ {
+      "@id" : "http://www.example.org/medicalOntology#DEV-001"
+    }, {
+      "@id" : "http://www.example.org/medicalOntology#DEV-002"
+    }, {
+      "@id" : "http://www.example.org/medicalOntology#DEV-003"
+    }, {
+      "@id" : "http://www.example.org/medicalOntology#DEV-004"
+    }, {
+      "@id" : "http://www.example.org/medicalOntology#DEV-005"
+    }, {
+      "@id" : "http://www.example.org/medicalOntology#FSCA-001"
+    }, {
+      "@id" : "http://www.example.org/medicalOntology#FSCA-002"
+    }, {
+      "@id" : "http://www.example.org/medicalOntology#FSCA-003"
+    }, {
+      "@id" : "http://www.example.org/medicalOntology#FSCA-004"
+    }, {
+      "@id" : "http://www.example.org/medicalOntology#INC-001"
+    }, {
+      "@id" : "http://www.example.org/medicalOntology#INC-002"
+    }, {
+      "@id" : "http://www.example.org/medicalOntology#INC-003"
+    }, {
+      "@id" : "http://www.example.org/medicalOntology#INC-004"
+    }, {
+      "@id" : "http://www.example.org/medicalOntology#INC-005"
+    }, {
+      "@id" : "http://www.example.org/medicalOntology#MAN-001"
+    }, {
+      "@id" : "http://www.example.org/medicalOntology#MAN-002"
+    }, {
+      "@id" : "http://www.example.org/medicalOntology#MAN-006"
+    }, {
+      "@id" : "http://www.example.org/medicalOntology#RSK-002"
+    }, {
+      "@id" : "http://www.example.org/medicalOntology#RSK-003"
+    }, {
+      "@id" : "http://www.example.org/medicalOntology#RSK-005"
+    }, {
+      "@id" : "http://www.example.org/medicalOntology#RSK-006"
+    }, {
+      "@id" : "http://www.example.org/medicalOntology#RSK-009"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid3",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#cardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.example.org/medicalOntology#hasManufacturer"
+  } ]
+}, {
+  "@id" : "_:genid5",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#minCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.example.org/medicalOntology#affectsDevice"
+  } ]
+}, {
+  "@id" : "_:genid6",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#cardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.example.org/medicalOntology#hasRisk"
+  } ]
+}, {
+  "@id" : "_:genid7",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#cardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.example.org/medicalOntology#reportedBy"
+  } ]
+}, {
+  "@id" : "http://purl.org/dc/elements/1.1/creator",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/elements/1.1/date",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/elements/1.1/description",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/elements/1.1/language",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/elements/1.1/title",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/vocab/vann/preferredNamespacePrefix",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/vocab/vann/preferredNamespaceUri",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.example.org/medicalOntology",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
+  "http://purl.org/dc/elements/1.1/creator" : [ {
+    "@value" : "David Bou Catalán"
+  } ],
+  "http://purl.org/dc/elements/1.1/date" : [ {
+    "@value" : "2026-04-17"
+  } ],
+  "http://purl.org/dc/elements/1.1/description" : [ {
+    "@value" : "Ontology describing medical devices, incidents, risks and corrective actions for regulatory and safety analysis."
+  } ],
+  "http://purl.org/dc/elements/1.1/language" : [ {
+    "@value" : "en"
+  } ],
+  "http://purl.org/dc/elements/1.1/title" : [ {
+    "@value" : "Medical Devices Ontology"
+  } ],
+  "http://purl.org/vocab/vann/preferredNamespacePrefix" : [ {
+    "@value" : "med"
+  } ],
+  "http://purl.org/vocab/vann/preferredNamespaceUri" : [ {
+    "@value" : "http://www.example.org/medicalOntology#"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Ontology for medical devices, incidents and risks"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Medical Ontology"
+  } ]
+}, {
+  "@id" : "http://www.example.org/medicalOntology#ActiveDevice",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Active medical device"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Active Device"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.example.org/medicalOntology#Device"
+  } ]
+}, {
+  "@id" : "http://www.example.org/medicalOntology#ActiveImplant",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Active implant device"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Active Implant"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.example.org/medicalOntology#Device"
+  } ]
+}, {
+  "@id" : "http://www.example.org/medicalOntology#ContaminationRisk",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Risk related to contamination on the device"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Contamination Risk"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.example.org/medicalOntology#Risk"
+  } ]
+}, {
+  "@id" : "http://www.example.org/medicalOntology#CorrectiveAction",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Action taken to correct an incident"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Corrective Action"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "_:genid1"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "http://www.example.org/medicalOntology#Incident"
+  } ],
+  "http://www.w3.org/2002/07/owl#hasKey" : [ {
+    "@list" : [ {
+      "@id" : "http://www.example.org/medicalOntology#fscaId"
+    } ]
+  } ]
+}, {
+  "@id" : "http://www.example.org/medicalOntology#CybersecurityRisk",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Risk related to cybersecurity issues"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Cybersecurity Risk"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.example.org/medicalOntology#Risk"
+  } ]
+}, {
+  "@id" : "http://www.example.org/medicalOntology#DEV-001",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.example.org/medicalOntology#deviceId" : [ {
+    "@value" : "DEV-001"
+  } ],
+  "http://www.example.org/medicalOntology#deviceName" : [ {
+    "@value" : "HeartMate 3 LVAD"
+  } ],
+  "http://www.example.org/medicalOntology#deviceType" : [ {
+    "@value" : "ImplantableActiveDevice"
+  } ],
+  "http://www.example.org/medicalOntology#hasManufacturer" : [ {
+    "@id" : "http://www.example.org/medicalOntology#MAN-001"
+  } ],
+  "http://www.example.org/medicalOntology#intendedPurpose" : [ {
+    "@value" : "Ventricular assist device for end-stage heart failure"
+  } ],
+  "http://www.example.org/medicalOntology#riskClass" : [ {
+    "@value" : "ClassIII"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.example.org/medicalOntology#ImplantableActiveDevice"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Device 001 - HeartMate 3 LVAD"
+  } ]
+}, {
+  "@id" : "http://www.example.org/medicalOntology#DEV-002",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.example.org/medicalOntology#deviceId" : [ {
+    "@value" : "DEV-002"
+  } ],
+  "http://www.example.org/medicalOntology#deviceName" : [ {
+    "@value" : "Micra AV Transcatheter Pacing System"
+  } ],
+  "http://www.example.org/medicalOntology#deviceType" : [ {
+    "@value" : "ActiveImplant"
+  } ],
+  "http://www.example.org/medicalOntology#hasManufacturer" : [ {
+    "@id" : "http://www.example.org/medicalOntology#MAN-001"
+  } ],
+  "http://www.example.org/medicalOntology#intendedPurpose" : [ {
+    "@value" : "Leadless cardiac pacemaker for atrioventricular synchrony"
+  } ],
+  "http://www.example.org/medicalOntology#riskClass" : [ {
+    "@value" : "ClassIII"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.example.org/medicalOntology#ActiveImplant"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Device 002 - Micra AV Transcatheter Pacing System"
+  } ]
+}, {
+  "@id" : "http://www.example.org/medicalOntology#DEV-003",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.example.org/medicalOntology#deviceId" : [ {
+    "@value" : "DEV-003"
+  } ],
+  "http://www.example.org/medicalOntology#deviceName" : [ {
+    "@value" : "Portico Transcatheter Heart Valve"
+  } ],
+  "http://www.example.org/medicalOntology#deviceType" : [ {
+    "@value" : "ImplantableDevice"
+  } ],
+  "http://www.example.org/medicalOntology#hasManufacturer" : [ {
+    "@id" : "http://www.example.org/medicalOntology#MAN-002"
+  } ],
+  "http://www.example.org/medicalOntology#intendedPurpose" : [ {
+    "@value" : "Transcatheter aortic valve replacement (TAVI)"
+  } ],
+  "http://www.example.org/medicalOntology#riskClass" : [ {
+    "@value" : "ClassIII"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.example.org/medicalOntology#ImplantableDevice"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Device 003 - Portico Transcatheter Heart Valve"
+  } ]
+}, {
+  "@id" : "http://www.example.org/medicalOntology#DEV-004",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.example.org/medicalOntology#deviceId" : [ {
+    "@value" : "DEV-004"
+  } ],
+  "http://www.example.org/medicalOntology#deviceName" : [ {
+    "@value" : "SYNERGY Stent System"
+  } ],
+  "http://www.example.org/medicalOntology#deviceType" : [ {
+    "@value" : "ImplantableActiveDevice"
+  } ],
+  "http://www.example.org/medicalOntology#hasManufacturer" : [ {
+    "@id" : "http://www.example.org/medicalOntology#MAN-006"
+  } ],
+  "http://www.example.org/medicalOntology#intendedPurpose" : [ {
+    "@value" : "Drug-eluting coronary stent"
+  } ],
+  "http://www.example.org/medicalOntology#riskClass" : [ {
+    "@value" : "ClassIIb"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.example.org/medicalOntology#ImplantableActiveDevice"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Device 004 - SYNERGY Stent System"
+  } ]
+}, {
+  "@id" : "http://www.example.org/medicalOntology#DEV-005",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.example.org/medicalOntology#deviceId" : [ {
+    "@value" : "DEV-005"
+  } ],
+  "http://www.example.org/medicalOntology#deviceName" : [ {
+    "@value" : "ACUITY X4 Quadripolar LV Lead"
+  } ],
+  "http://www.example.org/medicalOntology#deviceType" : [ {
+    "@value" : "ActiveImplant"
+  } ],
+  "http://www.example.org/medicalOntology#hasManufacturer" : [ {
+    "@id" : "http://www.example.org/medicalOntology#MAN-006"
+  } ],
+  "http://www.example.org/medicalOntology#intendedPurpose" : [ {
+    "@value" : "Cardiac resynchronization therapy lead"
+  } ],
+  "http://www.example.org/medicalOntology#riskClass" : [ {
+    "@value" : "ClassIII"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.example.org/medicalOntology#ActiveImplant"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Device 005 - ACUITY X4 Quadripolar LV Lead"
+  } ]
+}, {
+  "@id" : "http://www.example.org/medicalOntology#Device",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Medical device"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Device"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "_:genid3"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "http://www.example.org/medicalOntology#Incident"
+  } ],
+  "http://www.w3.org/2002/07/owl#hasKey" : [ {
+    "@list" : [ {
+      "@id" : "http://www.example.org/medicalOntology#deviceId"
+    } ]
+  } ]
+}, {
+  "@id" : "http://www.example.org/medicalOntology#DiagnosticRisk",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Risk of incorrect diagnostic"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Diagnostic Risk"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.example.org/medicalOntology#Risk"
+  } ]
+}, {
+  "@id" : "http://www.example.org/medicalOntology#FSCA-001",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.example.org/medicalOntology#actionType" : [ {
+    "@value" : "SafetyAlert"
+  } ],
+  "http://www.example.org/medicalOntology#correctiveActionDescription" : [ {
+    "@value" : "Safety alert issued to all implanting centres regarding anticoagulation protocol update for HeartMate 3 to reduce device thrombosis risk. INR target range revised to 2.0–3.0."
+  } ],
+  "http://www.example.org/medicalOntology#countriesAffected" : [ {
+    "@value" : "EU-wide"
+  } ],
+  "http://www.example.org/medicalOntology#derivedFrom" : [ {
+    "@id" : "http://www.example.org/medicalOntology#INC-001"
+  } ],
+  "http://www.example.org/medicalOntology#devicesAffected" : [ {
+    "@value" : "850"
+  } ],
+  "http://www.example.org/medicalOntology#fscaId" : [ {
+    "@value" : "FSCA-001"
+  } ],
+  "http://www.example.org/medicalOntology#scope" : [ {
+    "@value" : "All HeartMate 3 LVAD units implanted since 2020"
+  } ],
+  "http://www.example.org/medicalOntology#status" : [ {
+    "@value" : "Open"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.example.org/medicalOntology#CorrectiveAction"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "CorrectiveAction 001 - Safety alert for HeartMate thrombosis risk"
+  } ]
+}, {
+  "@id" : "http://www.example.org/medicalOntology#FSCA-002",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.example.org/medicalOntology#actionType" : [ {
+    "@value" : "Recall"
+  } ],
+  "http://www.example.org/medicalOntology#correctiveActionDescription" : [ {
+    "@value" : "Voluntary recall of affected Micra AV lots due to premature battery depletion. Replacement units provided. 97% of affected devices successfully replaced."
+  } ],
+  "http://www.example.org/medicalOntology#countriesAffected" : [ {
+    "@value" : "EU-wide + UK"
+  } ],
+  "http://www.example.org/medicalOntology#derivedFrom" : [ {
+    "@id" : "http://www.example.org/medicalOntology#INC-002"
+  } ],
+  "http://www.example.org/medicalOntology#devicesAffected" : [ {
+    "@value" : "1240"
+  } ],
+  "http://www.example.org/medicalOntology#fscaId" : [ {
+    "@value" : "FSCA-002"
+  } ],
+  "http://www.example.org/medicalOntology#scope" : [ {
+    "@value" : "Micra AV lots manufactured between 2022-09 and 2023-03"
+  } ],
+  "http://www.example.org/medicalOntology#status" : [ {
+    "@value" : "Closed"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.example.org/medicalOntology#CorrectiveAction"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "CorrectiveAction 002 - Recall of Micra AV devices"
+  } ]
+}, {
+  "@id" : "http://www.example.org/medicalOntology#FSCA-003",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.example.org/medicalOntology#actionType" : [ {
+    "@value" : "InSituCorrection"
+  } ],
+  "http://www.example.org/medicalOntology#correctiveActionDescription" : [ {
+    "@value" : "Enhanced deployment training and updated IFU for Portico valve implantation technique. New implantation checklist mandatory for all TAVI centres."
+  } ],
+  "http://www.example.org/medicalOntology#countriesAffected" : [ {
+    "@value" : "EU-wide"
+  } ],
+  "http://www.example.org/medicalOntology#derivedFrom" : [ {
+    "@id" : "http://www.example.org/medicalOntology#INC-003"
+  } ],
+  "http://www.example.org/medicalOntology#devicesAffected" : [ {
+    "@value" : "320"
+  } ],
+  "http://www.example.org/medicalOntology#fscaId" : [ {
+    "@value" : "FSCA-003"
+  } ],
+  "http://www.example.org/medicalOntology#scope" : [ {
+    "@value" : "Portico THV sizes 23mm and 25mm from lots before 2023-11"
+  } ],
+  "http://www.example.org/medicalOntology#status" : [ {
+    "@value" : "Closed"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.example.org/medicalOntology#CorrectiveAction"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "CorrectiveAction 003 - Portico valve deployment improvement"
+  } ]
+}, {
+  "@id" : "http://www.example.org/medicalOntology#FSCA-004",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.example.org/medicalOntology#actionType" : [ {
+    "@value" : "SafetyAlert"
+  } ],
+  "http://www.example.org/medicalOntology#correctiveActionDescription" : [ {
+    "@value" : "Safety communication to implanting cardiologists regarding optimal fixation technique for ACUITY X4 lead. Enhanced fluoroscopy verification protocol at implantation."
+  } ],
+  "http://www.example.org/medicalOntology#countriesAffected" : [ {
+    "@value" : "EU-wide"
+  } ],
+  "http://www.example.org/medicalOntology#derivedFrom" : [ {
+    "@id" : "http://www.example.org/medicalOntology#INC-005"
+  } ],
+  "http://www.example.org/medicalOntology#devicesAffected" : [ {
+    "@value" : "2100"
+  } ],
+  "http://www.example.org/medicalOntology#fscaId" : [ {
+    "@value" : "FSCA-004"
+  } ],
+  "http://www.example.org/medicalOntology#scope" : [ {
+    "@value" : "All ACUITY X4 quadripolar LV leads"
+  } ],
+  "http://www.example.org/medicalOntology#status" : [ {
+    "@value" : "Open"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.example.org/medicalOntology#CorrectiveAction"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "CorrectiveAction 004 - Safety communication for ACUITY X4 lead"
+  } ]
+}, {
+  "@id" : "http://www.example.org/medicalOntology#INC-001",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.example.org/medicalOntology#affectsDevice" : [ {
+    "@id" : "http://www.example.org/medicalOntology#DEV-001"
+  } ],
+  "http://www.example.org/medicalOntology#correctiveActionTaken" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "true"
+  } ],
+  "http://www.example.org/medicalOntology#countryReported" : [ {
+    "@value" : "Germany"
+  } ],
+  "http://www.example.org/medicalOntology#hasRisk" : [ {
+    "@id" : "http://www.example.org/medicalOntology#RSK-003"
+  } ],
+  "http://www.example.org/medicalOntology#incidentDescription" : [ {
+    "@value" : "Patient implanted with HeartMate 3 LVAD developed ischemic stroke 6 months post-implant. Device thrombus confirmed by echocardiography."
+  } ],
+  "http://www.example.org/medicalOntology#incidentId" : [ {
+    "@value" : "INC-001"
+  } ],
+  "http://www.example.org/medicalOntology#incidentType" : [ {
+    "@value" : "SeriousIncident"
+  } ],
+  "http://www.example.org/medicalOntology#outcome" : [ {
+    "@value" : "Serious patient injury - embolic stroke"
+  } ],
+  "http://www.example.org/medicalOntology#patientAge" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "58"
+  } ],
+  "http://www.example.org/medicalOntology#patientSex" : [ {
+    "@value" : "Male"
+  } ],
+  "http://www.example.org/medicalOntology#reportedBy" : [ {
+    "@id" : "http://www.example.org/medicalOntology#MAN-001"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.example.org/medicalOntology#SeriousIncident"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Incident 001 - Serious patient injury - embolic stroke"
+  } ]
+}, {
+  "@id" : "http://www.example.org/medicalOntology#INC-002",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.example.org/medicalOntology#affectsDevice" : [ {
+    "@id" : "http://www.example.org/medicalOntology#DEV-002"
+  } ],
+  "http://www.example.org/medicalOntology#correctiveActionTaken" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "true"
+  } ],
+  "http://www.example.org/medicalOntology#countryReported" : [ {
+    "@value" : "France"
+  } ],
+  "http://www.example.org/medicalOntology#hasRisk" : [ {
+    "@id" : "http://www.example.org/medicalOntology#RSK-009"
+  } ],
+  "http://www.example.org/medicalOntology#incidentDescription" : [ {
+    "@value" : "Micra AV pacemaker reached elective replacement indicator 14 months earlier than expected longevity specification."
+  } ],
+  "http://www.example.org/medicalOntology#incidentId" : [ {
+    "@value" : "INC-002"
+  } ],
+  "http://www.example.org/medicalOntology#incidentType" : [ {
+    "@value" : "SeriousIncident"
+  } ],
+  "http://www.example.org/medicalOntology#outcome" : [ {
+    "@value" : "Device malfunction - premature battery depletion"
+  } ],
+  "http://www.example.org/medicalOntology#patientAge" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "72"
+  } ],
+  "http://www.example.org/medicalOntology#patientSex" : [ {
+    "@value" : "Female"
+  } ],
+  "http://www.example.org/medicalOntology#reportedBy" : [ {
+    "@id" : "http://www.example.org/medicalOntology#MAN-001"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.example.org/medicalOntology#SeriousIncident"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Incident 002 - Device malfunction - premature battery depletion"
+  } ]
+}, {
+  "@id" : "http://www.example.org/medicalOntology#INC-003",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.example.org/medicalOntology#affectsDevice" : [ {
+    "@id" : "http://www.example.org/medicalOntology#DEV-003"
+  } ],
+  "http://www.example.org/medicalOntology#correctiveActionTaken" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "true"
+  } ],
+  "http://www.example.org/medicalOntology#countryReported" : [ {
+    "@value" : "Italy"
+  } ],
+  "http://www.example.org/medicalOntology#hasRisk" : [ {
+    "@id" : "http://www.example.org/medicalOntology#RSK-005"
+  } ],
+  "http://www.example.org/medicalOntology#incidentDescription" : [ {
+    "@value" : "Portico valve showed paravalvular leak grade III due to partial migration 2 weeks post-TAVI procedure."
+  } ],
+  "http://www.example.org/medicalOntology#incidentId" : [ {
+    "@value" : "INC-003"
+  } ],
+  "http://www.example.org/medicalOntology#incidentType" : [ {
+    "@value" : "SeriousIncident"
+  } ],
+  "http://www.example.org/medicalOntology#outcome" : [ {
+    "@value" : "Surgical intervention required - valve re-anchoring"
+  } ],
+  "http://www.example.org/medicalOntology#patientAge" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "67"
+  } ],
+  "http://www.example.org/medicalOntology#patientSex" : [ {
+    "@value" : "Male"
+  } ],
+  "http://www.example.org/medicalOntology#reportedBy" : [ {
+    "@id" : "http://www.example.org/medicalOntology#MAN-002"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.example.org/medicalOntology#SeriousIncident"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Incident 003 - Surgical intervention required - valve re-anchoring"
+  } ]
+}, {
+  "@id" : "http://www.example.org/medicalOntology#INC-004",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.example.org/medicalOntology#affectsDevice" : [ {
+    "@id" : "http://www.example.org/medicalOntology#DEV-004"
+  } ],
+  "http://www.example.org/medicalOntology#correctiveActionTaken" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "false"
+  } ],
+  "http://www.example.org/medicalOntology#countryReported" : [ {
+    "@value" : "Spain"
+  } ],
+  "http://www.example.org/medicalOntology#hasRisk" : [ {
+    "@id" : "http://www.example.org/medicalOntology#RSK-002"
+  } ],
+  "http://www.example.org/medicalOntology#incidentDescription" : [ {
+    "@value" : "SYNERGY stent fracture detected on angiography 18 months post-implant causing in-stent restenosis."
+  } ],
+  "http://www.example.org/medicalOntology#incidentId" : [ {
+    "@value" : "INC-004"
+  } ],
+  "http://www.example.org/medicalOntology#incidentType" : [ {
+    "@value" : "SeriousIncident"
+  } ],
+  "http://www.example.org/medicalOntology#outcome" : [ {
+    "@value" : "Device malfunction - stent fracture"
+  } ],
+  "http://www.example.org/medicalOntology#patientAge" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "55"
+  } ],
+  "http://www.example.org/medicalOntology#patientSex" : [ {
+    "@value" : "Female"
+  } ],
+  "http://www.example.org/medicalOntology#reportedBy" : [ {
+    "@id" : "http://www.example.org/medicalOntology#MAN-006"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.example.org/medicalOntology#SeriousIncident"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Incident 004 - Device malfunction - stent fracture"
+  } ]
+}, {
+  "@id" : "http://www.example.org/medicalOntology#INC-005",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.example.org/medicalOntology#affectsDevice" : [ {
+    "@id" : "http://www.example.org/medicalOntology#DEV-005"
+  } ],
+  "http://www.example.org/medicalOntology#correctiveActionTaken" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "true"
+  } ],
+  "http://www.example.org/medicalOntology#countryReported" : [ {
+    "@value" : "Netherlands"
+  } ],
+  "http://www.example.org/medicalOntology#hasRisk" : [ {
+    "@id" : "http://www.example.org/medicalOntology#RSK-006"
+  } ],
+  "http://www.example.org/medicalOntology#incidentDescription" : [ {
+    "@value" : "ACUITY X4 lead dislodgement to right ventricle requiring fluoroscopy-guided repositioning."
+  } ],
+  "http://www.example.org/medicalOntology#incidentId" : [ {
+    "@value" : "INC-005"
+  } ],
+  "http://www.example.org/medicalOntology#incidentType" : [ {
+    "@value" : "SeriousIncident"
+  } ],
+  "http://www.example.org/medicalOntology#outcome" : [ {
+    "@value" : "Surgical intervention required - lead extraction"
+  } ],
+  "http://www.example.org/medicalOntology#patientAge" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "63"
+  } ],
+  "http://www.example.org/medicalOntology#patientSex" : [ {
+    "@value" : "Male"
+  } ],
+  "http://www.example.org/medicalOntology#reportedBy" : [ {
+    "@id" : "http://www.example.org/medicalOntology#MAN-006"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.example.org/medicalOntology#SeriousIncident"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Incident 005 - Surgical intervention required - lead extraction"
+  } ]
+}, {
+  "@id" : "http://www.example.org/medicalOntology#IVDDevice",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "In vitro diagnostic medical device"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "IVD Device"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.example.org/medicalOntology#Device"
+  } ]
+}, {
+  "@id" : "http://www.example.org/medicalOntology#ImplantableActiveDevice",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Implantable and active medical device"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Implantable Active Device"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.example.org/medicalOntology#Device"
+  } ]
+}, {
+  "@id" : "http://www.example.org/medicalOntology#ImplantableDevice",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Implantable medical device"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Implantable Device"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.example.org/medicalOntology#Device"
+  } ]
+}, {
+  "@id" : "http://www.example.org/medicalOntology#Incident",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Device malfunction"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Incident"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "_:genid5"
+  }, {
+    "@id" : "_:genid6"
+  }, {
+    "@id" : "_:genid7"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "http://www.example.org/medicalOntology#Manufacturer"
+  }, {
+    "@id" : "http://www.example.org/medicalOntology#Risk"
+  } ],
+  "http://www.w3.org/2002/07/owl#hasKey" : [ {
+    "@list" : [ {
+      "@id" : "http://www.example.org/medicalOntology#incidentId"
+    } ]
+  } ]
+}, {
+  "@id" : "http://www.example.org/medicalOntology#InfectionRisk",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Risk of infection by a medical device"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Infection Risk"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.example.org/medicalOntology#Risk"
+  } ]
+}, {
+  "@id" : "http://www.example.org/medicalOntology#InjuryRisk",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Risk related to physical harm"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Injury Risk"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.example.org/medicalOntology#Risk"
+  } ]
+}, {
+  "@id" : "http://www.example.org/medicalOntology#InterferenceRisk",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Risk caused by interference"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Interference Risk"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.example.org/medicalOntology#Risk"
+  } ]
+}, {
+  "@id" : "http://www.example.org/medicalOntology#MAN-001",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.example.org/medicalOntology#country" : [ {
+    "@id" : "http://dbpedia.org/resource/Ireland"
+  } ],
+  "http://www.example.org/medicalOntology#manufacturerId" : [ {
+    "@value" : "MAN-001"
+  } ],
+  "http://www.example.org/medicalOntology#manufacturerName" : [ {
+    "@value" : "Medtronic plc"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.example.org/medicalOntology#Manufacturer"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Manufacturer 001 - Medtronic plc"
+  } ]
+}, {
+  "@id" : "http://www.example.org/medicalOntology#MAN-002",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.example.org/medicalOntology#country" : [ {
+    "@id" : "http://dbpedia.org/resource/Germany"
+  } ],
+  "http://www.example.org/medicalOntology#manufacturerId" : [ {
+    "@value" : "MAN-002"
+  } ],
+  "http://www.example.org/medicalOntology#manufacturerName" : [ {
+    "@value" : "Abbott Medical Devices"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.example.org/medicalOntology#Manufacturer"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Manufacturer 002 - Abbott Medical Devices"
+  } ]
+}, {
+  "@id" : "http://www.example.org/medicalOntology#MAN-006",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.example.org/medicalOntology#country" : [ {
+    "@id" : "http://dbpedia.org/resource/Ireland"
+  } ],
+  "http://www.example.org/medicalOntology#manufacturerId" : [ {
+    "@value" : "MAN-006"
+  } ],
+  "http://www.example.org/medicalOntology#manufacturerName" : [ {
+    "@value" : "Boston Scientific Corporation"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.example.org/medicalOntology#Manufacturer"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Manufacturer 006 - Boston Scientific Corporation"
+  } ]
+}, {
+  "@id" : "http://www.example.org/medicalOntology#MalfunctionRisk",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Risk related to device malfunction"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Malfunction Risk"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.example.org/medicalOntology#Risk"
+  } ]
+}, {
+  "@id" : "http://www.example.org/medicalOntology#Manufacturer",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Device manufacturer"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Manufacturer"
+  } ],
+  "http://www.w3.org/2002/07/owl#hasKey" : [ {
+    "@list" : [ {
+      "@id" : "http://www.example.org/medicalOntology#manufacturerId"
+    } ]
+  } ]
+}, {
+  "@id" : "http://www.example.org/medicalOntology#MaterialRisk",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Risk related to degradation of materials"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Material Risk"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.example.org/medicalOntology#Risk"
+  } ]
+}, {
+  "@id" : "http://www.example.org/medicalOntology#NearMissIncident",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Harmless incident"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Near Miss Incident"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.example.org/medicalOntology#Incident"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "http://www.example.org/medicalOntology#SeriousIncident"
+  } ]
+}, {
+  "@id" : "http://www.example.org/medicalOntology#RSK-002",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.example.org/medicalOntology#affectedDeviceType" : [ {
+    "@value" : "ImplantableDevice"
+  } ],
+  "http://www.example.org/medicalOntology#riskCategory" : [ {
+    "@value" : "Device Failure"
+  } ],
+  "http://www.example.org/medicalOntology#riskDescription" : [ {
+    "@value" : "Structural failure of mechanical components under physiological load"
+  } ],
+  "http://www.example.org/medicalOntology#riskId" : [ {
+    "@value" : "RSK-002"
+  } ],
+  "http://www.example.org/medicalOntology#riskName" : [ {
+    "@value" : "Device failure - mechanical"
+  } ],
+  "http://www.example.org/medicalOntology#riskType" : [ {
+    "@value" : "MalfunctionRisk"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.example.org/medicalOntology#MalfunctionRisk"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Risk 001 - Device failure - mechanical"
+  } ]
+}, {
+  "@id" : "http://www.example.org/medicalOntology#RSK-003",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.example.org/medicalOntology#affectedDeviceType" : [ {
+    "@value" : "ImplantableActiveDevice"
+  } ],
+  "http://www.example.org/medicalOntology#riskCategory" : [ {
+    "@value" : "Patient Harm"
+  } ],
+  "http://www.example.org/medicalOntology#riskDescription" : [ {
+    "@value" : "Thrombus formation on device surface causing embolic events"
+  } ],
+  "http://www.example.org/medicalOntology#riskId" : [ {
+    "@value" : "RSK-003"
+  } ],
+  "http://www.example.org/medicalOntology#riskName" : [ {
+    "@value" : "Thrombosis - device-related"
+  } ],
+  "http://www.example.org/medicalOntology#riskType" : [ {
+    "@value" : "InjuryRisk"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.example.org/medicalOntology#InjuryRisk"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Risk 003 - Thrombosis - device-related"
+  } ]
+}, {
+  "@id" : "http://www.example.org/medicalOntology#RSK-005",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.example.org/medicalOntology#affectedDeviceType" : [ {
+    "@value" : "ImplantableDevice"
+  } ],
+  "http://www.example.org/medicalOntology#riskCategory" : [ {
+    "@value" : "Device Performance"
+  } ],
+  "http://www.example.org/medicalOntology#riskDescription" : [ {
+    "@value" : "Unintended displacement of implant from intended anatomical position"
+  } ],
+  "http://www.example.org/medicalOntology#riskId" : [ {
+    "@value" : "RSK-005"
+  } ],
+  "http://www.example.org/medicalOntology#riskName" : [ {
+    "@value" : "Device migration - implant"
+  } ],
+  "http://www.example.org/medicalOntology#riskType" : [ {
+    "@value" : "MalfunctionRisk"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.example.org/medicalOntology#MalfunctionRisk"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Risk 005 - Device migration - implant"
+  } ]
+}, {
+  "@id" : "http://www.example.org/medicalOntology#RSK-006",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.example.org/medicalOntology#affectedDeviceType" : [ {
+    "@value" : "ActiveImplant"
+  } ],
+  "http://www.example.org/medicalOntology#riskCategory" : [ {
+    "@value" : "Device Performance"
+  } ],
+  "http://www.example.org/medicalOntology#riskDescription" : [ {
+    "@value" : "Cardiac lead displacement requiring repositioning or replacement"
+  } ],
+  "http://www.example.org/medicalOntology#riskId" : [ {
+    "@value" : "RSK-006"
+  } ],
+  "http://www.example.org/medicalOntology#riskName" : [ {
+    "@value" : "Lead dislodgement"
+  } ],
+  "http://www.example.org/medicalOntology#riskType" : [ {
+    "@value" : "MalfunctionRisk"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.example.org/medicalOntology#MalfunctionRisk"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Risk 006 - Lead dislodgement"
+  } ]
+}, {
+  "@id" : "http://www.example.org/medicalOntology#RSK-009",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.example.org/medicalOntology#affectedDeviceType" : [ {
+    "@value" : "ActiveImplant"
+  } ],
+  "http://www.example.org/medicalOntology#riskCategory" : [ {
+    "@value" : "Device Failure"
+  } ],
+  "http://www.example.org/medicalOntology#riskDescription" : [ {
+    "@value" : "Battery end-of-life earlier than specified, risking therapy interruption"
+  } ],
+  "http://www.example.org/medicalOntology#riskId" : [ {
+    "@value" : "RSK-009"
+  } ],
+  "http://www.example.org/medicalOntology#riskName" : [ {
+    "@value" : "Battery depletion - premature"
+  } ],
+  "http://www.example.org/medicalOntology#riskType" : [ {
+    "@value" : "MalfunctionRisk"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.example.org/medicalOntology#MalfunctionRisk"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Risk 009 - Battery depletion - premature"
+  } ]
+}, {
+  "@id" : "http://www.example.org/medicalOntology#RadiationRisk",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Risk related to radiation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Radiation Risk"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.example.org/medicalOntology#Risk"
+  } ]
+}, {
+  "@id" : "http://www.example.org/medicalOntology#Risk",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Potential hazard of a medical device"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Risk"
+  } ],
+  "http://www.w3.org/2002/07/owl#hasKey" : [ {
+    "@list" : [ {
+      "@id" : "http://www.example.org/medicalOntology#riskId"
+    } ]
+  } ]
+}, {
+  "@id" : "http://www.example.org/medicalOntology#SelfTestDevice",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Device for a self test"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Self Test Device"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.example.org/medicalOntology#Device"
+  } ]
+}, {
+  "@id" : "http://www.example.org/medicalOntology#SeriousIncident",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Serious incident for humans"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Serious Incident"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.example.org/medicalOntology#Incident"
+  } ]
+}, {
+  "@id" : "http://www.example.org/medicalOntology#SingleUseDevice",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Device for a single use"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Single Use Device"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.example.org/medicalOntology#Device"
+  } ]
+}, {
+  "@id" : "http://www.example.org/medicalOntology#SoftwareRisk",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Risk related to software malfunction"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Software Risk"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.example.org/medicalOntology#Risk"
+  } ]
+}, {
+  "@id" : "http://www.example.org/medicalOntology#actionType",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Type of corrective action"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.example.org/medicalOntology#CorrectiveAction"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "action type"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://www.example.org/medicalOntology#affectedDeviceType",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Type of device affected by the risk"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.example.org/medicalOntology#Risk"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "affected device type"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://www.example.org/medicalOntology#affectsDevice",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Incident affects a device"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.example.org/medicalOntology#Incident"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "affects device"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.example.org/medicalOntology#Device"
+  } ]
+}, {
+  "@id" : "http://www.example.org/medicalOntology#correctiveActionDescription",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Description of the corrective action"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.example.org/medicalOntology#CorrectiveAction"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "corrective action description"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://www.example.org/medicalOntology#correctiveActionTaken",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A corrective action has been taken?"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.example.org/medicalOntology#Incident"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "corrective action taken"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
+  } ]
+}, {
+  "@id" : "http://www.example.org/medicalOntology#countriesAffected",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Countries affected to take the corrective action"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.example.org/medicalOntology#CorrectiveAction"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "countries affected"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://www.example.org/medicalOntology#country",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Country where the manufacturer is located"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.example.org/medicalOntology#Manufacturer"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "country"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://www.example.org/medicalOntology#countryReported",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Country where the incident was reported"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.example.org/medicalOntology#Incident"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "country reported"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://www.example.org/medicalOntology#derivedFrom",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Corrective action derived from an incident"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.example.org/medicalOntology#CorrectiveAction"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "derived from"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.example.org/medicalOntology#Incident"
+  } ]
+}, {
+  "@id" : "http://www.example.org/medicalOntology#deviceId",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Unique identifier of the medical device"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.example.org/medicalOntology#Device"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "device id"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://www.example.org/medicalOntology#deviceName",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Name of the medical device"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.example.org/medicalOntology#Device"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "device name"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://www.example.org/medicalOntology#deviceType",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Type of the medical device"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.example.org/medicalOntology#Device"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "device type"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://www.example.org/medicalOntology#devicesAffected",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Number of devices affected"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.example.org/medicalOntology#CorrectiveAction"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "devices affected"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://www.example.org/medicalOntology#fscaId",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Unique identifier of the corrective action"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.example.org/medicalOntology#CorrectiveAction"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "fsca id"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://www.example.org/medicalOntology#hasManufacturer",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Device has a manufacturer"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.example.org/medicalOntology#Device"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "has manufacturer"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.example.org/medicalOntology#Manufacturer"
+  } ]
+}, {
+  "@id" : "http://www.example.org/medicalOntology#hasRisk",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Incident has a risk"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.example.org/medicalOntology#Incident"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "has risk"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.example.org/medicalOntology#Risk"
+  } ]
+}, {
+  "@id" : "http://www.example.org/medicalOntology#incidentDescription",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Description of the incident"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.example.org/medicalOntology#Incident"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "incident description"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://www.example.org/medicalOntology#incidentId",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Unique identifier of the incident"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.example.org/medicalOntology#Incident"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "incident id"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://www.example.org/medicalOntology#incidentType",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Type of incident"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.example.org/medicalOntology#Incident"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "incident type"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://www.example.org/medicalOntology#intendedPurpose",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Intended purpose of the device"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.example.org/medicalOntology#Device"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "intended purpose"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://www.example.org/medicalOntology#manufacturerId",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Unique identifier of the manufacturer"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.example.org/medicalOntology#Manufacturer"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "manufacturer id"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://www.example.org/medicalOntology#manufacturerName",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Name of the manufacturer organization"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.example.org/medicalOntology#Manufacturer"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "name"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://www.example.org/medicalOntology#outcome",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Outcome of the incident"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.example.org/medicalOntology#Incident"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "outcome"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://www.example.org/medicalOntology#patientAge",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Age of the patient"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.example.org/medicalOntology#Incident"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "patient age"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#integer"
+  } ]
+}, {
+  "@id" : "http://www.example.org/medicalOntology#patientSex",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Sex of the patient"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.example.org/medicalOntology#Incident"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "patient sex"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://www.example.org/medicalOntology#reportedBy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Incident reported by a manufacturer"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.example.org/medicalOntology#Incident"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "reported by"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.example.org/medicalOntology#Manufacturer"
+  } ]
+}, {
+  "@id" : "http://www.example.org/medicalOntology#riskCategory",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Category of the risk"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.example.org/medicalOntology#Risk"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "risk category"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://www.example.org/medicalOntology#riskClass",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Risk class of the device"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.example.org/medicalOntology#Device"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "risk class"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://www.example.org/medicalOntology#riskDescription",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Description of the risk"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.example.org/medicalOntology#Risk"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "risk description"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://www.example.org/medicalOntology#riskId",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Unique identifier of the risk"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.example.org/medicalOntology#Risk"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "risk id"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://www.example.org/medicalOntology#riskName",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Name of the risk"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.example.org/medicalOntology#Risk"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "risk name"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://www.example.org/medicalOntology#riskType",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Type of risk"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.example.org/medicalOntology#Risk"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "risk type"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://www.example.org/medicalOntology#scope",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Scope of the corrective action"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.example.org/medicalOntology#CorrectiveAction"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "scope"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://www.example.org/medicalOntology#status",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Current status of the corrective action"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.example.org/medicalOntology#CorrectiveAction"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "status"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+} ]
