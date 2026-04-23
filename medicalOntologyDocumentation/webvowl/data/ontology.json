@@ -1,0 +1,2143 @@
+{
+  "_comment" : "Created with OWL2VOWL (version 0.3.5), http://vowl.visualdataweb.org",
+  "header" : {
+    "languages" : [ "undefined" ],
+    "baseIris" : [ "http://www.w3.org/2000/01/rdf-schema", "http://www.w3.org/2001/XMLSchema", "http://www.example.org/medicalOntology" ],
+    "title" : {
+      "undefined" : "Medical Devices Ontology"
+    },
+    "iri" : "http://www.example.org/medicalOntology",
+    "author" : [ "David Bou Catalán" ],
+    "description" : {
+      "undefined" : "Ontology describing medical devices, incidents, risks and corrective actions for regulatory and safety analysis."
+    },
+    "labels" : {
+      "undefined" : "Medical Ontology"
+    },
+    "comments" : {
+      "undefined" : "Ontology for medical devices, incidents and risks"
+    },
+    "other" : {
+      "date" : [ {
+        "identifier" : "date",
+        "language" : "undefined",
+        "value" : "2026-04-17",
+        "type" : "label"
+      } ],
+      "license" : [ {
+        "identifier" : "license",
+        "language" : "undefined",
+        "value" : "https://creativecommons.org/licenses/by/4.0/",
+        "type" : "iri"
+      } ],
+      "creator" : [ {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "David Bou Catalán",
+        "type" : "label"
+      } ],
+      "preferredNamespacePrefix" : [ {
+        "identifier" : "preferredNamespacePrefix",
+        "language" : "undefined",
+        "value" : "med",
+        "type" : "label"
+      } ],
+      "language" : [ {
+        "identifier" : "language",
+        "language" : "undefined",
+        "value" : "en",
+        "type" : "label"
+      } ],
+      "preferredNamespaceUri" : [ {
+        "identifier" : "preferredNamespaceUri",
+        "language" : "undefined",
+        "value" : "http://www.example.org/medicalOntology#",
+        "type" : "label"
+      } ],
+      "title" : [ {
+        "identifier" : "title",
+        "language" : "undefined",
+        "value" : "Medical Devices Ontology",
+        "type" : "label"
+      } ]
+    }
+  },
+  "namespace" : [ ],
+  "class" : [ {
+    "id" : "0",
+    "type" : "owl:Class"
+  }, {
+    "id" : "12",
+    "type" : "owl:Class"
+  }, {
+    "id" : "9",
+    "type" : "owl:Class"
+  }, {
+    "id" : "3",
+    "type" : "owl:Class"
+  }, {
+    "id" : "2",
+    "type" : "owl:Class"
+  }, {
+    "id" : "56",
+    "type" : "owl:Class"
+  }, {
+    "id" : "17",
+    "type" : "owl:Class"
+  }, {
+    "id" : "21",
+    "type" : "owl:Class"
+  }, {
+    "id" : "7",
+    "type" : "owl:Class"
+  }, {
+    "id" : "44",
+    "type" : "owl:Class"
+  }, {
+    "id" : "4",
+    "type" : "owl:Class"
+  }, {
+    "id" : "109",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "70",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "82",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "110",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "111",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "46",
+    "type" : "owl:Class"
+  }, {
+    "id" : "118",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "119",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "49",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "116",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "124",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "95",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "10",
+    "type" : "owl:Class"
+  }, {
+    "id" : "15",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "113",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "74",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "103",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "26",
+    "type" : "owl:Class"
+  }, {
+    "id" : "5",
+    "type" : "owl:Class"
+  }, {
+    "id" : "23",
+    "type" : "owl:Class"
+  }, {
+    "id" : "37",
+    "type" : "owl:Class"
+  }, {
+    "id" : "88",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "13",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "123",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "48",
+    "type" : "owl:Class"
+  }, {
+    "id" : "32",
+    "type" : "owl:Class"
+  }, {
+    "id" : "127",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "131",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "28",
+    "type" : "owl:Class"
+  }, {
+    "id" : "86",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "90",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "1",
+    "type" : "owl:Class"
+  }, {
+    "id" : "162",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "30",
+    "type" : "owl:Class"
+  }, {
+    "id" : "158",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "25",
+    "type" : "owl:Class"
+  }, {
+    "id" : "6",
+    "type" : "owl:Class"
+  }, {
+    "id" : "92",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "108",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "19",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "161",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "165",
+    "type" : "rdfs:Datatype"
+  } ],
+  "classAttribute" : [ {
+    "iri" : "http://www.example.org/medicalOntology#Device",
+    "baseIri" : "http://www.example.org/medicalOntology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Device",
+      "undefined" : "Device"
+    },
+    "subClasses" : [ "1", "2", "3", "4", "5", "6", "7" ],
+    "comment" : {
+      "undefined" : "Medical device"
+    },
+    "id" : "0"
+  }, {
+    "iri" : "http://www.example.org/medicalOntology#Risk",
+    "baseIri" : "http://www.example.org/medicalOntology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Risk",
+      "undefined" : "Risk"
+    },
+    "subClasses" : [ "10", "32", "28", "30", "21", "9", "26", "37", "23", "25" ],
+    "comment" : {
+      "undefined" : "Potential hazard of a medical device"
+    },
+    "id" : "12"
+  }, {
+    "iri" : "http://www.example.org/medicalOntology#DiagnosticRisk",
+    "baseIri" : "http://www.example.org/medicalOntology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "DiagnosticRisk",
+      "undefined" : "Diagnostic Risk"
+    },
+    "comment" : {
+      "undefined" : "Risk of incorrect diagnostic"
+    },
+    "id" : "9",
+    "superClasses" : [ "12" ]
+  }, {
+    "iri" : "http://www.example.org/medicalOntology#IVDDevice",
+    "baseIri" : "http://www.example.org/medicalOntology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "IVDDevice",
+      "undefined" : "IVD Device"
+    },
+    "comment" : {
+      "undefined" : "In vitro diagnostic medical device"
+    },
+    "id" : "3",
+    "superClasses" : [ "0" ]
+  }, {
+    "iri" : "http://www.example.org/medicalOntology#ImplantableDevice",
+    "baseIri" : "http://www.example.org/medicalOntology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ImplantableDevice",
+      "undefined" : "Implantable Device"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.example.org/medicalOntology#DEV-003",
+      "baseIri" : "http://www.example.org/medicalOntology",
+      "labels" : {
+        "IRI-based" : "DEV-003",
+        "undefined" : "Device 003 - Portico Transcatheter Heart Valve"
+      }
+    } ],
+    "comment" : {
+      "undefined" : "Implantable medical device"
+    },
+    "id" : "2",
+    "superClasses" : [ "0" ]
+  }, {
+    "iri" : "http://www.example.org/medicalOntology#CorrectiveAction",
+    "baseIri" : "http://www.example.org/medicalOntology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "CorrectiveAction",
+      "undefined" : "Corrective Action"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.example.org/medicalOntology#FSCA-001",
+      "baseIri" : "http://www.example.org/medicalOntology",
+      "labels" : {
+        "IRI-based" : "FSCA-001",
+        "undefined" : "CorrectiveAction 001 - Safety alert for HeartMate thrombosis risk"
+      }
+    }, {
+      "iri" : "http://www.example.org/medicalOntology#FSCA-002",
+      "baseIri" : "http://www.example.org/medicalOntology",
+      "labels" : {
+        "IRI-based" : "FSCA-002",
+        "undefined" : "CorrectiveAction 002 - Recall of Micra AV devices"
+      }
+    }, {
+      "iri" : "http://www.example.org/medicalOntology#FSCA-003",
+      "baseIri" : "http://www.example.org/medicalOntology",
+      "labels" : {
+        "IRI-based" : "FSCA-003",
+        "undefined" : "CorrectiveAction 003 - Portico valve deployment improvement"
+      }
+    }, {
+      "iri" : "http://www.example.org/medicalOntology#FSCA-004",
+      "baseIri" : "http://www.example.org/medicalOntology",
+      "labels" : {
+        "IRI-based" : "FSCA-004",
+        "undefined" : "CorrectiveAction 004 - Safety communication for ACUITY X4 lead"
+      }
+    } ],
+    "comment" : {
+      "undefined" : "Action taken to correct an incident"
+    },
+    "id" : "56"
+  }, {
+    "iri" : "http://www.example.org/medicalOntology#Incident",
+    "baseIri" : "http://www.example.org/medicalOntology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Incident",
+      "undefined" : "Incident"
+    },
+    "subClasses" : [ "44", "46" ],
+    "comment" : {
+      "undefined" : "Device malfunction"
+    },
+    "id" : "17"
+  }, {
+    "iri" : "http://www.example.org/medicalOntology#InterferenceRisk",
+    "baseIri" : "http://www.example.org/medicalOntology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "InterferenceRisk",
+      "undefined" : "Interference Risk"
+    },
+    "comment" : {
+      "undefined" : "Risk caused by interference"
+    },
+    "id" : "21",
+    "superClasses" : [ "12" ]
+  }, {
+    "iri" : "http://www.example.org/medicalOntology#SingleUseDevice",
+    "baseIri" : "http://www.example.org/medicalOntology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SingleUseDevice",
+      "undefined" : "Single Use Device"
+    },
+    "comment" : {
+      "undefined" : "Device for a single use"
+    },
+    "id" : "7",
+    "superClasses" : [ "0" ]
+  }, {
+    "iri" : "http://www.example.org/medicalOntology#NearMissIncident",
+    "baseIri" : "http://www.example.org/medicalOntology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "NearMissIncident",
+      "undefined" : "Near Miss Incident"
+    },
+    "comment" : {
+      "undefined" : "Harmless incident"
+    },
+    "id" : "44",
+    "superClasses" : [ "17" ]
+  }, {
+    "iri" : "http://www.example.org/medicalOntology#ActiveImplant",
+    "baseIri" : "http://www.example.org/medicalOntology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ActiveImplant",
+      "undefined" : "Active Implant"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.example.org/medicalOntology#DEV-005",
+      "baseIri" : "http://www.example.org/medicalOntology",
+      "labels" : {
+        "IRI-based" : "DEV-005",
+        "undefined" : "Device 005 - ACUITY X4 Quadripolar LV Lead"
+      }
+    }, {
+      "iri" : "http://www.example.org/medicalOntology#DEV-002",
+      "baseIri" : "http://www.example.org/medicalOntology",
+      "labels" : {
+        "IRI-based" : "DEV-002",
+        "undefined" : "Device 002 - Micra AV Transcatheter Pacing System"
+      }
+    } ],
+    "comment" : {
+      "undefined" : "Active implant device"
+    },
+    "id" : "4",
+    "superClasses" : [ "0" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "109",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "70",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "82",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "110",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "111",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.example.org/medicalOntology#SeriousIncident",
+    "baseIri" : "http://www.example.org/medicalOntology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SeriousIncident",
+      "undefined" : "Serious Incident"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.example.org/medicalOntology#INC-001",
+      "baseIri" : "http://www.example.org/medicalOntology",
+      "labels" : {
+        "IRI-based" : "INC-001",
+        "undefined" : "Incident 001 - Serious patient injury - embolic stroke"
+      }
+    }, {
+      "iri" : "http://www.example.org/medicalOntology#INC-003",
+      "baseIri" : "http://www.example.org/medicalOntology",
+      "labels" : {
+        "IRI-based" : "INC-003",
+        "undefined" : "Incident 003 - Surgical intervention required - valve re-anchoring"
+      }
+    }, {
+      "iri" : "http://www.example.org/medicalOntology#INC-002",
+      "baseIri" : "http://www.example.org/medicalOntology",
+      "labels" : {
+        "IRI-based" : "INC-002",
+        "undefined" : "Incident 002 - Device malfunction - premature battery depletion"
+      }
+    }, {
+      "iri" : "http://www.example.org/medicalOntology#INC-005",
+      "baseIri" : "http://www.example.org/medicalOntology",
+      "labels" : {
+        "IRI-based" : "INC-005",
+        "undefined" : "Incident 005 - Surgical intervention required - lead extraction"
+      }
+    }, {
+      "iri" : "http://www.example.org/medicalOntology#INC-004",
+      "baseIri" : "http://www.example.org/medicalOntology",
+      "labels" : {
+        "IRI-based" : "INC-004",
+        "undefined" : "Incident 004 - Device malfunction - stent fracture"
+      }
+    } ],
+    "comment" : {
+      "undefined" : "Serious incident for humans"
+    },
+    "id" : "46",
+    "superClasses" : [ "17" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "118",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "119",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "49",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "116",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "124",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "95",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.example.org/medicalOntology#MalfunctionRisk",
+    "baseIri" : "http://www.example.org/medicalOntology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "MalfunctionRisk",
+      "undefined" : "Malfunction Risk"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.example.org/medicalOntology#RSK-002",
+      "baseIri" : "http://www.example.org/medicalOntology",
+      "labels" : {
+        "IRI-based" : "RSK-002",
+        "undefined" : "Risk 001 - Device failure - mechanical"
+      }
+    }, {
+      "iri" : "http://www.example.org/medicalOntology#RSK-006",
+      "baseIri" : "http://www.example.org/medicalOntology",
+      "labels" : {
+        "IRI-based" : "RSK-006",
+        "undefined" : "Risk 006 - Lead dislodgement"
+      }
+    }, {
+      "iri" : "http://www.example.org/medicalOntology#RSK-005",
+      "baseIri" : "http://www.example.org/medicalOntology",
+      "labels" : {
+        "IRI-based" : "RSK-005",
+        "undefined" : "Risk 005 - Device migration - implant"
+      }
+    }, {
+      "iri" : "http://www.example.org/medicalOntology#RSK-009",
+      "baseIri" : "http://www.example.org/medicalOntology",
+      "labels" : {
+        "IRI-based" : "RSK-009",
+        "undefined" : "Risk 009 - Battery depletion - premature"
+      }
+    } ],
+    "comment" : {
+      "undefined" : "Risk related to device malfunction"
+    },
+    "id" : "10",
+    "superClasses" : [ "12" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "15",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "113",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "74",
+    "label" : {
+      "IRI-based" : "boolean"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "103",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.example.org/medicalOntology#RadiationRisk",
+    "baseIri" : "http://www.example.org/medicalOntology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "RadiationRisk",
+      "undefined" : "Radiation Risk"
+    },
+    "comment" : {
+      "undefined" : "Risk related to radiation"
+    },
+    "id" : "26",
+    "superClasses" : [ "12" ]
+  }, {
+    "iri" : "http://www.example.org/medicalOntology#SelfTestDevice",
+    "baseIri" : "http://www.example.org/medicalOntology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SelfTestDevice",
+      "undefined" : "Self Test Device"
+    },
+    "comment" : {
+      "undefined" : "Device for a self test"
+    },
+    "id" : "5",
+    "superClasses" : [ "0" ]
+  }, {
+    "iri" : "http://www.example.org/medicalOntology#InjuryRisk",
+    "baseIri" : "http://www.example.org/medicalOntology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "InjuryRisk",
+      "undefined" : "Injury Risk"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.example.org/medicalOntology#RSK-003",
+      "baseIri" : "http://www.example.org/medicalOntology",
+      "labels" : {
+        "IRI-based" : "RSK-003",
+        "undefined" : "Risk 003 - Thrombosis - device-related"
+      }
+    } ],
+    "comment" : {
+      "undefined" : "Risk related to physical harm"
+    },
+    "id" : "23",
+    "superClasses" : [ "12" ]
+  }, {
+    "iri" : "http://www.example.org/medicalOntology#ContaminationRisk",
+    "baseIri" : "http://www.example.org/medicalOntology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ContaminationRisk",
+      "undefined" : "Contamination Risk"
+    },
+    "comment" : {
+      "undefined" : "Risk related to contamination on the device"
+    },
+    "id" : "37",
+    "superClasses" : [ "12" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "88",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "13",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "123",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.example.org/medicalOntology#Manufacturer",
+    "baseIri" : "http://www.example.org/medicalOntology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Manufacturer",
+      "undefined" : "Manufacturer"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.example.org/medicalOntology#MAN-006",
+      "baseIri" : "http://www.example.org/medicalOntology",
+      "annotations" : {
+        "country" : [ {
+          "identifier" : "country",
+          "language" : "undefined",
+          "value" : "http://dbpedia.org/resource/Ireland",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "MAN-006",
+        "undefined" : "Manufacturer 006 - Boston Scientific Corporation"
+      }
+    }, {
+      "iri" : "http://www.example.org/medicalOntology#MAN-002",
+      "baseIri" : "http://www.example.org/medicalOntology",
+      "annotations" : {
+        "country" : [ {
+          "identifier" : "country",
+          "language" : "undefined",
+          "value" : "http://dbpedia.org/resource/Germany",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "MAN-002",
+        "undefined" : "Manufacturer 002 - Abbott Medical Devices"
+      }
+    }, {
+      "iri" : "http://www.example.org/medicalOntology#MAN-001",
+      "baseIri" : "http://www.example.org/medicalOntology",
+      "annotations" : {
+        "country" : [ {
+          "identifier" : "country",
+          "language" : "undefined",
+          "value" : "http://dbpedia.org/resource/Ireland",
+          "type" : "iri"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "MAN-001",
+        "undefined" : "Manufacturer 001 - Medtronic plc"
+      }
+    } ],
+    "comment" : {
+      "undefined" : "Device manufacturer"
+    },
+    "id" : "48"
+  }, {
+    "iri" : "http://www.example.org/medicalOntology#SoftwareRisk",
+    "baseIri" : "http://www.example.org/medicalOntology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SoftwareRisk",
+      "undefined" : "Software Risk"
+    },
+    "comment" : {
+      "undefined" : "Risk related to software malfunction"
+    },
+    "id" : "32",
+    "superClasses" : [ "12" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "127",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "131",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.example.org/medicalOntology#MaterialRisk",
+    "baseIri" : "http://www.example.org/medicalOntology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "MaterialRisk",
+      "undefined" : "Material Risk"
+    },
+    "comment" : {
+      "undefined" : "Risk related to degradation of materials"
+    },
+    "id" : "28",
+    "superClasses" : [ "12" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "86",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "90",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.example.org/medicalOntology#ImplantableActiveDevice",
+    "baseIri" : "http://www.example.org/medicalOntology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ImplantableActiveDevice",
+      "undefined" : "Implantable Active Device"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.example.org/medicalOntology#DEV-004",
+      "baseIri" : "http://www.example.org/medicalOntology",
+      "labels" : {
+        "IRI-based" : "DEV-004",
+        "undefined" : "Device 004 - SYNERGY Stent System"
+      }
+    }, {
+      "iri" : "http://www.example.org/medicalOntology#DEV-001",
+      "baseIri" : "http://www.example.org/medicalOntology",
+      "labels" : {
+        "IRI-based" : "DEV-001",
+        "undefined" : "Device 001 - HeartMate 3 LVAD"
+      }
+    } ],
+    "comment" : {
+      "undefined" : "Implantable and active medical device"
+    },
+    "id" : "1",
+    "superClasses" : [ "0" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "162",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.example.org/medicalOntology#InfectionRisk",
+    "baseIri" : "http://www.example.org/medicalOntology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "InfectionRisk",
+      "undefined" : "Infection Risk"
+    },
+    "comment" : {
+      "undefined" : "Risk of infection by a medical device"
+    },
+    "id" : "30",
+    "superClasses" : [ "12" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "158",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.example.org/medicalOntology#CybersecurityRisk",
+    "baseIri" : "http://www.example.org/medicalOntology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "CybersecurityRisk",
+      "undefined" : "Cybersecurity Risk"
+    },
+    "comment" : {
+      "undefined" : "Risk related to cybersecurity issues"
+    },
+    "id" : "25",
+    "superClasses" : [ "12" ]
+  }, {
+    "iri" : "http://www.example.org/medicalOntology#ActiveDevice",
+    "baseIri" : "http://www.example.org/medicalOntology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ActiveDevice",
+      "undefined" : "Active Device"
+    },
+    "comment" : {
+      "undefined" : "Active medical device"
+    },
+    "id" : "6",
+    "superClasses" : [ "0" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#integer",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "92",
+    "label" : {
+      "IRI-based" : "integer"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "108",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "19",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "161",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "165",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  } ],
+  "property" : [ {
+    "id" : "8",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "11",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "14",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "16",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "18",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "20",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "22",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "24",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "27",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "29",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "31",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "33",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "34",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "35",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "36",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "38",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "39",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "40",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "41",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "42",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "43",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "45",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "47",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "50",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "51",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "52",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "53",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "54",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "55",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "57",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "58",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "59",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "60",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "61",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "62",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "63",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "64",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "65",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "66",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "67",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "68",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "69",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "71",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "72",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "73",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "75",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "76",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "77",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "78",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "79",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "80",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "81",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "83",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "84",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "85",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "87",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "89",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "91",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "93",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "94",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "96",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "97",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "98",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "99",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "100",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "101",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "102",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "104",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "105",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "106",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "107",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "112",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "114",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "115",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "117",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "120",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "121",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "122",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "125",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "126",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "128",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "129",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "130",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "132",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "133",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "134",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "135",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "136",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "137",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "138",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "139",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "140",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "141",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "142",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "143",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "144",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "145",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "146",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "147",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "148",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "149",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "150",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "151",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "152",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "153",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "154",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "155",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "156",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "157",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "159",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "160",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "163",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "164",
+    "type" : "owl:datatypeProperty"
+  } ],
+  "propertyAttribute" : [ {
+    "range" : "10",
+    "domain" : "9",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "8"
+  }, {
+    "iri" : "http://www.example.org/medicalOntology#riskType",
+    "baseIri" : "http://www.example.org/medicalOntology",
+    "range" : "13",
+    "label" : {
+      "IRI-based" : "riskType",
+      "undefined" : "risk type"
+    },
+    "domain" : "12",
+    "comment" : {
+      "undefined" : "Type of risk"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "11"
+  }, {
+    "iri" : "http://www.example.org/medicalOntology#affectedDeviceType",
+    "baseIri" : "http://www.example.org/medicalOntology",
+    "range" : "15",
+    "label" : {
+      "IRI-based" : "affectedDeviceType",
+      "undefined" : "affected device type"
+    },
+    "domain" : "12",
+    "comment" : {
+      "undefined" : "Type of device affected by the risk"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "14"
+  }, {
+    "iri" : "http://www.example.org/medicalOntology#affectsDevice",
+    "baseIri" : "http://www.example.org/medicalOntology",
+    "range" : "0",
+    "label" : {
+      "IRI-based" : "affectsDevice",
+      "undefined" : "affects device"
+    },
+    "minCardinality" : "1",
+    "domain" : "17",
+    "comment" : {
+      "undefined" : "Incident affects a device"
+    },
+    "attributes" : [ "object" ],
+    "id" : "16"
+  }, {
+    "iri" : "http://www.example.org/medicalOntology#intendedPurpose",
+    "baseIri" : "http://www.example.org/medicalOntology",
+    "range" : "19",
+    "label" : {
+      "IRI-based" : "intendedPurpose",
+      "undefined" : "intended purpose"
+    },
+    "domain" : "0",
+    "comment" : {
+      "undefined" : "Intended purpose of the device"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "18"
+  }, {
+    "range" : "21",
+    "domain" : "9",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "20"
+  }, {
+    "range" : "23",
+    "domain" : "9",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "22"
+  }, {
+    "range" : "26",
+    "domain" : "25",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "24"
+  }, {
+    "range" : "28",
+    "domain" : "25",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "27"
+  }, {
+    "range" : "30",
+    "domain" : "9",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "29"
+  }, {
+    "range" : "32",
+    "domain" : "25",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "31"
+  }, {
+    "range" : "23",
+    "domain" : "25",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "33"
+  }, {
+    "range" : "30",
+    "domain" : "25",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "34"
+  }, {
+    "range" : "10",
+    "domain" : "25",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "35"
+  }, {
+    "range" : "21",
+    "domain" : "25",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "36"
+  }, {
+    "range" : "12",
+    "domain" : "9",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "38"
+  }, {
+    "range" : "12",
+    "domain" : "26",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "39"
+  }, {
+    "range" : "12",
+    "domain" : "37",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "40"
+  }, {
+    "range" : "12",
+    "domain" : "23",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "41"
+  }, {
+    "range" : "12",
+    "domain" : "25",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "42"
+  }, {
+    "range" : "17",
+    "domain" : "44",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "43"
+  }, {
+    "range" : "17",
+    "domain" : "46",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "45"
+  }, {
+    "iri" : "http://www.example.org/medicalOntology#country",
+    "baseIri" : "http://www.example.org/medicalOntology",
+    "range" : "49",
+    "label" : {
+      "IRI-based" : "country",
+      "undefined" : "country"
+    },
+    "domain" : "48",
+    "comment" : {
+      "undefined" : "Country where the manufacturer is located"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "47"
+  }, {
+    "range" : "32",
+    "domain" : "37",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "50"
+  }, {
+    "range" : "26",
+    "domain" : "37",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "51"
+  }, {
+    "range" : "9",
+    "domain" : "25",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "52"
+  }, {
+    "range" : "21",
+    "domain" : "37",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "53"
+  }, {
+    "range" : "23",
+    "domain" : "37",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "54"
+  }, {
+    "range" : "28",
+    "domain" : "37",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "55"
+  }, {
+    "range" : "10",
+    "domain" : "37",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "57"
+  }, {
+    "range" : "25",
+    "domain" : "37",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "58"
+  }, {
+    "range" : "12",
+    "domain" : "28",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "59"
+  }, {
+    "range" : "12",
+    "domain" : "32",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "60"
+  }, {
+    "range" : "30",
+    "domain" : "37",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "61"
+  }, {
+    "range" : "9",
+    "domain" : "37",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "62"
+  }, {
+    "range" : "12",
+    "domain" : "30",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "63"
+  }, {
+    "range" : "12",
+    "domain" : "21",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "64"
+  }, {
+    "range" : "26",
+    "domain" : "10",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "65"
+  }, {
+    "range" : "26",
+    "domain" : "28",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "66"
+  }, {
+    "range" : "32",
+    "domain" : "10",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "67"
+  }, {
+    "iri" : "http://www.example.org/medicalOntology#reportedBy",
+    "baseIri" : "http://www.example.org/medicalOntology",
+    "range" : "48",
+    "label" : {
+      "IRI-based" : "reportedBy",
+      "undefined" : "reported by"
+    },
+    "cardinality" : "1",
+    "domain" : "17",
+    "comment" : {
+      "undefined" : "Incident reported by a manufacturer"
+    },
+    "attributes" : [ "object", "functional" ],
+    "id" : "68"
+  }, {
+    "iri" : "http://www.example.org/medicalOntology#fscaId",
+    "baseIri" : "http://www.example.org/medicalOntology",
+    "range" : "70",
+    "label" : {
+      "IRI-based" : "fscaId",
+      "undefined" : "fsca id"
+    },
+    "domain" : "56",
+    "comment" : {
+      "undefined" : "Unique identifier of the corrective action"
+    },
+    "attributes" : [ "datatype", "key" ],
+    "id" : "69"
+  }, {
+    "range" : "26",
+    "domain" : "21",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "71"
+  }, {
+    "range" : "28",
+    "domain" : "21",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "72"
+  }, {
+    "iri" : "http://www.example.org/medicalOntology#correctiveActionTaken",
+    "baseIri" : "http://www.example.org/medicalOntology",
+    "range" : "74",
+    "label" : {
+      "IRI-based" : "correctiveActionTaken",
+      "undefined" : "corrective action taken"
+    },
+    "domain" : "17",
+    "comment" : {
+      "undefined" : "A corrective action has been taken?"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "73"
+  }, {
+    "range" : "28",
+    "domain" : "10",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "75"
+  }, {
+    "range" : "32",
+    "domain" : "21",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "76"
+  }, {
+    "range" : "26",
+    "domain" : "23",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "77"
+  }, {
+    "range" : "28",
+    "domain" : "23",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "78"
+  }, {
+    "range" : "10",
+    "domain" : "21",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "79"
+  }, {
+    "range" : "32",
+    "domain" : "23",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "80"
+  }, {
+    "iri" : "http://www.example.org/medicalOntology#incidentType",
+    "baseIri" : "http://www.example.org/medicalOntology",
+    "range" : "82",
+    "label" : {
+      "IRI-based" : "incidentType",
+      "undefined" : "incident type"
+    },
+    "domain" : "17",
+    "comment" : {
+      "undefined" : "Type of incident"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "81"
+  }, {
+    "range" : "10",
+    "domain" : "23",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "83"
+  }, {
+    "range" : "21",
+    "domain" : "23",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "84"
+  }, {
+    "iri" : "http://www.example.org/medicalOntology#riskName",
+    "baseIri" : "http://www.example.org/medicalOntology",
+    "range" : "86",
+    "label" : {
+      "IRI-based" : "riskName",
+      "undefined" : "risk name"
+    },
+    "domain" : "12",
+    "comment" : {
+      "undefined" : "Name of the risk"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "85"
+  }, {
+    "iri" : "http://www.example.org/medicalOntology#scope",
+    "baseIri" : "http://www.example.org/medicalOntology",
+    "range" : "88",
+    "label" : {
+      "IRI-based" : "scope",
+      "undefined" : "scope"
+    },
+    "domain" : "56",
+    "comment" : {
+      "undefined" : "Scope of the corrective action"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "87"
+  }, {
+    "iri" : "http://www.example.org/medicalOntology#riskId",
+    "baseIri" : "http://www.example.org/medicalOntology",
+    "range" : "90",
+    "label" : {
+      "IRI-based" : "riskId",
+      "undefined" : "risk id"
+    },
+    "domain" : "12",
+    "comment" : {
+      "undefined" : "Unique identifier of the risk"
+    },
+    "attributes" : [ "datatype", "key" ],
+    "id" : "89"
+  }, {
+    "iri" : "http://www.example.org/medicalOntology#patientAge",
+    "baseIri" : "http://www.example.org/medicalOntology",
+    "range" : "92",
+    "label" : {
+      "IRI-based" : "patientAge",
+      "undefined" : "patient age"
+    },
+    "domain" : "17",
+    "comment" : {
+      "undefined" : "Age of the patient"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "91"
+  }, {
+    "range" : "32",
+    "domain" : "30",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "93"
+  }, {
+    "iri" : "http://www.example.org/medicalOntology#countryReported",
+    "baseIri" : "http://www.example.org/medicalOntology",
+    "range" : "95",
+    "label" : {
+      "IRI-based" : "countryReported",
+      "undefined" : "country reported"
+    },
+    "domain" : "17",
+    "comment" : {
+      "undefined" : "Country where the incident was reported"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "94"
+  }, {
+    "range" : "10",
+    "domain" : "30",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "96"
+  }, {
+    "range" : "21",
+    "domain" : "30",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "97"
+  }, {
+    "range" : "26",
+    "domain" : "30",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "98"
+  }, {
+    "range" : "28",
+    "domain" : "30",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "99"
+  }, {
+    "range" : "26",
+    "domain" : "9",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "100"
+  }, {
+    "range" : "28",
+    "domain" : "9",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "101"
+  }, {
+    "iri" : "http://www.example.org/medicalOntology#correctiveActionDescription",
+    "baseIri" : "http://www.example.org/medicalOntology",
+    "range" : "103",
+    "label" : {
+      "IRI-based" : "correctiveActionDescription",
+      "undefined" : "corrective action description"
+    },
+    "domain" : "56",
+    "comment" : {
+      "undefined" : "Description of the corrective action"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "102"
+  }, {
+    "range" : "23",
+    "domain" : "30",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "104"
+  }, {
+    "range" : "32",
+    "domain" : "9",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "105"
+  }, {
+    "iri" : "http://www.example.org/medicalOntology#derivedFrom",
+    "baseIri" : "http://www.example.org/medicalOntology",
+    "range" : "17",
+    "label" : {
+      "IRI-based" : "derivedFrom",
+      "undefined" : "derived from"
+    },
+    "minCardinality" : "1",
+    "domain" : "56",
+    "comment" : {
+      "undefined" : "Corrective action derived from an incident"
+    },
+    "attributes" : [ "object" ],
+    "id" : "106"
+  }, {
+    "iri" : "http://www.example.org/medicalOntology#manufacturerId",
+    "baseIri" : "http://www.example.org/medicalOntology",
+    "range" : "108",
+    "label" : {
+      "IRI-based" : "manufacturerId",
+      "undefined" : "manufacturer id"
+    },
+    "domain" : "48",
+    "comment" : {
+      "undefined" : "Unique identifier of the manufacturer"
+    },
+    "attributes" : [ "datatype", "key" ],
+    "id" : "107"
+  }, {
+    "iri" : "http://www.example.org/medicalOntology#actionType",
+    "baseIri" : "http://www.example.org/medicalOntology",
+    "range" : "113",
+    "label" : {
+      "IRI-based" : "actionType",
+      "undefined" : "action type"
+    },
+    "domain" : "56",
+    "comment" : {
+      "undefined" : "Type of corrective action"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "112"
+  }, {
+    "iri" : "http://www.example.org/medicalOntology#hasManufacturer",
+    "baseIri" : "http://www.example.org/medicalOntology",
+    "range" : "48",
+    "label" : {
+      "IRI-based" : "hasManufacturer",
+      "undefined" : "has manufacturer"
+    },
+    "cardinality" : "1",
+    "domain" : "0",
+    "comment" : {
+      "undefined" : "Device has a manufacturer"
+    },
+    "attributes" : [ "object", "functional" ],
+    "id" : "114"
+  }, {
+    "iri" : "http://www.example.org/medicalOntology#countriesAffected",
+    "baseIri" : "http://www.example.org/medicalOntology",
+    "range" : "116",
+    "label" : {
+      "IRI-based" : "countriesAffected",
+      "undefined" : "countries affected"
+    },
+    "domain" : "56",
+    "comment" : {
+      "undefined" : "Countries affected to take the corrective action"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "115"
+  }, {
+    "iri" : "http://www.example.org/medicalOntology#deviceType",
+    "baseIri" : "http://www.example.org/medicalOntology",
+    "range" : "118",
+    "label" : {
+      "IRI-based" : "deviceType",
+      "undefined" : "device type"
+    },
+    "domain" : "0",
+    "comment" : {
+      "undefined" : "Type of the medical device"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "117"
+  }, {
+    "iri" : "http://www.example.org/medicalOntology#devicesAffected",
+    "baseIri" : "http://www.example.org/medicalOntology",
+    "range" : "111",
+    "label" : {
+      "IRI-based" : "devicesAffected",
+      "undefined" : "devices affected"
+    },
+    "domain" : "56",
+    "comment" : {
+      "undefined" : "Number of devices affected"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "120"
+  }, {
+    "iri" : "http://www.example.org/medicalOntology#incidentId",
+    "baseIri" : "http://www.example.org/medicalOntology",
+    "range" : "110",
+    "label" : {
+      "IRI-based" : "incidentId",
+      "undefined" : "incident id"
+    },
+    "domain" : "17",
+    "comment" : {
+      "undefined" : "Unique identifier of the incident"
+    },
+    "attributes" : [ "datatype", "key" ],
+    "id" : "121"
+  }, {
+    "iri" : "http://www.example.org/medicalOntology#status",
+    "baseIri" : "http://www.example.org/medicalOntology",
+    "range" : "123",
+    "label" : {
+      "IRI-based" : "status",
+      "undefined" : "status"
+    },
+    "domain" : "56",
+    "comment" : {
+      "undefined" : "Current status of the corrective action"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "122"
+  }, {
+    "iri" : "http://www.example.org/medicalOntology#incidentDescription",
+    "baseIri" : "http://www.example.org/medicalOntology",
+    "range" : "109",
+    "label" : {
+      "IRI-based" : "incidentDescription",
+      "undefined" : "incident description"
+    },
+    "domain" : "17",
+    "comment" : {
+      "undefined" : "Description of the incident"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "125"
+  }, {
+    "iri" : "http://www.example.org/medicalOntology#riskDescription",
+    "baseIri" : "http://www.example.org/medicalOntology",
+    "range" : "127",
+    "label" : {
+      "IRI-based" : "riskDescription",
+      "undefined" : "risk description"
+    },
+    "domain" : "12",
+    "comment" : {
+      "undefined" : "Description of the risk"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "126"
+  }, {
+    "iri" : "http://www.example.org/medicalOntology#hasRisk",
+    "baseIri" : "http://www.example.org/medicalOntology",
+    "range" : "12",
+    "label" : {
+      "IRI-based" : "hasRisk",
+      "undefined" : "has risk"
+    },
+    "cardinality" : "1",
+    "domain" : "17",
+    "comment" : {
+      "undefined" : "Incident has a risk"
+    },
+    "attributes" : [ "object" ],
+    "id" : "128"
+  }, {
+    "range" : "12",
+    "domain" : "17",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "129"
+  }, {
+    "iri" : "http://www.example.org/medicalOntology#riskClass",
+    "baseIri" : "http://www.example.org/medicalOntology",
+    "range" : "131",
+    "label" : {
+      "IRI-based" : "riskClass",
+      "undefined" : "risk class"
+    },
+    "domain" : "0",
+    "comment" : {
+      "undefined" : "Risk class of the device"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "130"
+  }, {
+    "range" : "48",
+    "domain" : "17",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "132"
+  }, {
+    "range" : "46",
+    "domain" : "44",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "133"
+  }, {
+    "range" : "32",
+    "domain" : "26",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "134"
+  }, {
+    "range" : "32",
+    "domain" : "28",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "135"
+  }, {
+    "range" : "17",
+    "domain" : "0",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "136"
+  }, {
+    "range" : "17",
+    "domain" : "56",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "137"
+  }, {
+    "range" : "0",
+    "domain" : "6",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "138"
+  }, {
+    "range" : "0",
+    "domain" : "5",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "139"
+  }, {
+    "range" : "12",
+    "domain" : "10",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "140"
+  }, {
+    "range" : "0",
+    "domain" : "7",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "141"
+  }, {
+    "range" : "0",
+    "domain" : "2",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "142"
+  }, {
+    "range" : "0",
+    "domain" : "4",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "143"
+  }, {
+    "range" : "0",
+    "domain" : "3",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "144"
+  }, {
+    "range" : "5",
+    "domain" : "6",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "145"
+  }, {
+    "range" : "7",
+    "domain" : "6",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "146"
+  }, {
+    "range" : "2",
+    "domain" : "3",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "147"
+  }, {
+    "range" : "5",
+    "domain" : "3",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "148"
+  }, {
+    "iri" : "http://www.example.org/medicalOntology#deviceName",
+    "baseIri" : "http://www.example.org/medicalOntology",
+    "range" : "119",
+    "label" : {
+      "IRI-based" : "deviceName",
+      "undefined" : "device name"
+    },
+    "domain" : "0",
+    "comment" : {
+      "undefined" : "Name of the medical device"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "149"
+  }, {
+    "iri" : "http://www.example.org/medicalOntology#deviceId",
+    "baseIri" : "http://www.example.org/medicalOntology",
+    "range" : "124",
+    "label" : {
+      "IRI-based" : "deviceId",
+      "undefined" : "device id"
+    },
+    "domain" : "0",
+    "comment" : {
+      "undefined" : "Unique identifier of the medical device"
+    },
+    "attributes" : [ "datatype", "key" ],
+    "id" : "150"
+  }, {
+    "range" : "7",
+    "domain" : "3",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "151"
+  }, {
+    "range" : "5",
+    "domain" : "2",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "152"
+  }, {
+    "range" : "7",
+    "domain" : "2",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "153"
+  }, {
+    "range" : "7",
+    "domain" : "5",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "154"
+  }, {
+    "range" : "3",
+    "domain" : "6",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "155"
+  }, {
+    "range" : "2",
+    "domain" : "6",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "156"
+  }, {
+    "iri" : "http://www.example.org/medicalOntology#patientSex",
+    "baseIri" : "http://www.example.org/medicalOntology",
+    "range" : "158",
+    "label" : {
+      "IRI-based" : "patientSex",
+      "undefined" : "patient sex"
+    },
+    "domain" : "17",
+    "comment" : {
+      "undefined" : "Sex of the patient"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "157"
+  }, {
+    "range" : "0",
+    "domain" : "1",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "159"
+  }, {
+    "iri" : "http://www.example.org/medicalOntology#outcome",
+    "baseIri" : "http://www.example.org/medicalOntology",
+    "range" : "161",
+    "label" : {
+      "IRI-based" : "outcome",
+      "undefined" : "outcome"
+    },
+    "domain" : "17",
+    "comment" : {
+      "undefined" : "Outcome of the incident"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "160"
+  }, {
+    "iri" : "http://www.example.org/medicalOntology#riskCategory",
+    "baseIri" : "http://www.example.org/medicalOntology",
+    "range" : "162",
+    "label" : {
+      "IRI-based" : "riskCategory",
+      "undefined" : "risk category"
+    },
+    "domain" : "12",
+    "comment" : {
+      "undefined" : "Category of the risk"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "163"
+  }, {
+    "iri" : "http://www.example.org/medicalOntology#manufacturerName",
+    "baseIri" : "http://www.example.org/medicalOntology",
+    "range" : "165",
+    "label" : {
+      "IRI-based" : "manufacturerName",
+      "undefined" : "name"
+    },
+    "domain" : "48",
+    "comment" : {
+      "undefined" : "Name of the manufacturer organization"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "164"
+  } ]
+}
